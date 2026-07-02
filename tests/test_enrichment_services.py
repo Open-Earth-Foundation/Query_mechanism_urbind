@@ -329,13 +329,99 @@ class TestSerializeEnrichmentArtifacts:
                     "metrics": {"external_evidence_count": 0},
                 },
                 "web_research": {
-                    "status": "completed",
+                    "status": "completed_with_warnings",
                     "flags": {"web_research_enabled": True},
                     "outputs": {
                         "search_batches": [{"queries": ["capex Dresden"]}],
                         "added_city_fields": [],
+                        "scrape_failures": [
+                            {
+                                "url": "https://www.researchgate.net/publication/test",
+                                "domain": "www.researchgate.net",
+                                "provider": "firecrawl",
+                                "batch_id": "batch_001",
+                                "query": "capex Dresden",
+                                "error_type": "ReadTimeout",
+                                "error": "The read operation timed out",
+                                "severity": "warning",
+                            }
+                        ],
+                        "scrape_failure_summary": {
+                            "scrape_failures_by_type": {"ReadTimeout": 1},
+                            "scrape_failures_by_domain": {
+                                "www.researchgate.net": 1
+                            },
+                        },
+                        "search_execution_summary": {
+                            "config": {
+                                "tier1_first_search": True,
+                                "tier1_confidence_threshold": 0.6,
+                                "max_total_queries_per_run": 100,
+                                "max_queries_per_batch": 25,
+                                "max_retries_per_worker": 2,
+                                "max_workers": 6,
+                            },
+                            "metrics": {
+                                "planned_query_count": 1,
+                                "actual_serper_query_count": 4,
+                                "successful_serper_query_count": 4,
+                                "tier1_site_query_count": 3,
+                                "open_query_count": 1,
+                                "open_query_skipped_count": 0,
+                                "estimated_max_serper_query_count": 12,
+                                "batch_count": 1,
+                            },
+                            "batches": [
+                                {
+                                    "batch_id": "batch_001",
+                                    "planned_query_count": 1,
+                                    "matching_tier1_source_count": 3,
+                                    "matching_tier1_source_ids": [
+                                        "source_a",
+                                        "source_b",
+                                        "source_c",
+                                    ],
+                                    "estimated_max_serper_query_count": 12,
+                                    "actual_serper_query_count": 4,
+                                    "tier1_site_query_count": 3,
+                                    "open_query_count": 1,
+                                    "open_query_skipped_count": 0,
+                                }
+                            ],
+                        },
+                        "serper_billing_summary": {
+                            "planned_search_query_count": 1,
+                            "actual_serper_call_count": 4,
+                            "successful_serper_call_count": 4,
+                            "tier1_site_call_count": 3,
+                            "open_call_count": 1,
+                            "skipped_open_call_count": 0,
+                            "estimated_max_serper_call_count": 12,
+                            "tier1_first_search": True,
+                            "max_retries_per_worker": 2,
+                        },
                     },
-                    "metrics": {"web_finding_count": 0, "search_batch_count": 1},
+                    "metrics": {
+                        "web_finding_count": 0,
+                        "search_batch_count": 1,
+                        "scrape_attempt_count": 2,
+                        "scrape_success_count": 1,
+                        "scrape_failure_count": 1,
+                        "scrape_warning_count": 1,
+                        "actual_serper_query_count": 4,
+                        "actual_serper_call_count": 4,
+                        "planned_search_query_count": 1,
+                        "successful_serper_query_count": 4,
+                        "successful_serper_call_count": 4,
+                        "tier1_site_query_count": 3,
+                        "tier1_site_call_count": 3,
+                        "open_query_count": 1,
+                        "open_call_count": 1,
+                        "open_query_skipped_count": 0,
+                        "skipped_open_call_count": 0,
+                        "estimated_max_serper_query_count": 12,
+                        "estimated_max_serper_call_count": 12,
+                    },
                 },
             },
         )
@@ -379,6 +465,33 @@ class TestSerializeEnrichmentArtifacts:
         assert enrichment_stage["metrics"]["blank_field_count"] == 1
         assert enrichment_stage["metrics"]["stale_field_count"] == 0
         assert enrichment_stage["metrics"]["bundled_field_count"] == 0
+        assert enrichment_stage["metrics"]["scrape_attempt_count"] == 2
+        assert enrichment_stage["metrics"]["scrape_success_count"] == 1
+        assert enrichment_stage["metrics"]["scrape_failure_count"] == 1
+        assert enrichment_stage["metrics"]["actual_serper_query_count"] == 4
+        assert enrichment_stage["metrics"]["actual_serper_call_count"] == 4
+        assert enrichment_stage["metrics"]["tier1_site_query_count"] == 3
+        assert enrichment_stage["metrics"]["estimated_max_serper_query_count"] == 12
+        audit_payload = json.loads(
+            (enrichment_dir / "web_research_audit.json").read_text(encoding="utf-8")
+        )
+        assert audit_payload["status"] == "completed_with_warnings"
+        assert audit_payload["outputs"]["scrape_failures"][0]["error_type"] == (
+            "ReadTimeout"
+        )
+        assert audit_payload["outputs"]["scrape_failure_summary"] == {
+            "scrape_failures_by_type": {"ReadTimeout": 1},
+            "scrape_failures_by_domain": {"www.researchgate.net": 1},
+        }
+        search_summary = audit_payload["outputs"]["search_execution_summary"]
+        assert search_summary["config"]["max_total_queries_per_run"] == 100
+        assert search_summary["metrics"]["tier1_site_query_count"] == 3
+        assert search_summary["batches"][0]["matching_tier1_source_count"] == 3
+        billing = audit_payload["outputs"]["serper_billing_summary"]
+        assert billing["planned_search_query_count"] == 1
+        assert billing["actual_serper_call_count"] == 4
+        assert billing["tier1_site_call_count"] == 3
+        assert billing["open_call_count"] == 1
 
     def test_no_enrichment_key_is_noop(self, tmp_path: Path) -> None:
         run_paths = create_run_paths(tmp_path, "run_002", "context_bundle.json")

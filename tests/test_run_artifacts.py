@@ -167,6 +167,91 @@ def test_gap_and_external_detail(tmp_path: Path) -> None:
     }
 
 
+def test_stage_details_surface_web_research_without_external_audit(tmp_path: Path) -> None:
+    run = tmp_path / "web_only_run"
+    enrichment = run / "stage_files" / "008_enrichment"
+    _write(
+        enrichment / "enrichment_bundle.json",
+        {
+            "field_manifest": {"query_fields": []},
+            "gap_manifest": {"city_gaps": []},
+            "enriched_fields": [],
+            "web_findings": [
+                {
+                    "city": "Aachen",
+                    "field": "battery_storage_mwh",
+                    "value": 0,
+                    "unit": "MWh",
+                    "source_url": "https://example.test/battery",
+                    "source_tier": "open",
+                }
+            ],
+            "external_evidence": [],
+            "external_resolutions": [],
+            "external_no_evidence": [],
+            "freshness_results": [
+                {
+                    "city": "Aachen",
+                    "field": "battery_storage_mwh",
+                    "classification": "uncertain",
+                    "web_value": "0",
+                }
+            ],
+            "meta": {
+                "estimable_count": 0,
+                "non_estimable_count": 0,
+                "web_findings_count": 1,
+                "external_evidence_count": 0,
+                "elapsed_seconds": 1.0,
+            },
+        },
+    )
+    _write(
+        enrichment / "web_research_audit.json",
+        {
+            "outputs": {
+                "search_batches": [],
+                "national_findings": [],
+                "comparative_findings": [],
+                "serper_billing_summary": {
+                    "planned_search_query_count": 2,
+                    "actual_serper_call_count": 8,
+                    "successful_serper_call_count": 8,
+                    "tier1_site_call_count": 6,
+                    "open_call_count": 2,
+                    "skipped_open_call_count": 0,
+                    "estimated_max_serper_call_count": 12,
+                },
+            },
+            "metrics": {
+                "search_batch_count": 1,
+                "search_query_count": 2,
+                "web_finding_count": 1,
+                "freshness_result_count": 1,
+            },
+        },
+    )
+
+    payload = build_run_artifacts(run)
+
+    web = payload["stage_details"]["enrichment"]["web_research"]
+    freshness = payload["stage_details"]["enrichment"]["freshness"]
+    external = payload["stage_details"]["enrichment"]["external_sources"]
+    assert web["executed"] is True
+    assert web["search_query_count"] == 2
+    assert web["planned_search_query_count"] == 2
+    assert web["actual_serper_call_count"] == 8
+    assert web["tier1_site_call_count"] == 6
+    assert web["open_call_count"] == 2
+    assert web["web_finding_count"] == 1
+    assert web["findings"][0]["source_url"] == "https://example.test/battery"
+    assert freshness["executed"] is True
+    assert freshness["classification_counts"] == {"uncertain": 1}
+    assert external["executed"] is False
+    assert external["validated_count"] == 0
+    assert payload["artifact_health"]["web_research_audit"] == "ok"
+
+
 def test_manifest_alias_takes_precedence_over_glob(tmp_path: Path) -> None:
     run = tmp_path / "aliased_run"
     # Write the assumptions bundle in a NON-conventional location that the

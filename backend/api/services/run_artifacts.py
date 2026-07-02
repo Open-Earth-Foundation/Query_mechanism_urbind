@@ -63,6 +63,11 @@ _ARTIFACT_SPECS: dict[str, tuple[str, str, str]] = {
         "*enrichment*",
         "external_source_search_audit.json",
     ),
+    "web_research_audit": (
+        "enrichment_web_research_audit",
+        "*enrichment*",
+        "web_research_audit.json",
+    ),
     "assumptions_bundle": (
         "assumptions_assumptions_bundle",
         "*assumptions*",
@@ -568,12 +573,10 @@ def _build_enrichment_steps(
                 "validated_evidence": validated,
                 "no_evidence": no_evidence_count,
             },
-            # The classic break: lots of hits, none usable as anchors. This is a
-            # scoped statement about the external/web step only — it does NOT
-            # claim the downstream assumptions step failed, which can still
-            # estimate from peer/national data.
+            # Web findings can still inform freshness/status even when no
+            # governed external-source claim validates into an anchor.
             "warn": (
-                "Found evidence but none validated into usable anchors."
+                "Web research found evidence, but no governed external claims validated into anchors."
                 if web_findings > 0 and validated == 0
                 else None
             ),
@@ -687,6 +690,176 @@ def _build_external_search(store: _ArtifactStore) -> dict[str, Any]:
     }
 
 
+def _build_stage_details(
+    store: _ArtifactStore,
+    external_search: dict[str, Any],
+    reason_breakdown: dict[str, int],
+) -> dict[str, Any]:
+    """Build frontend-friendly detail sections that stay aligned to artifact stages."""
+    enrichment = store.get("enrichment_bundle")
+    assumptions = store.get("assumptions_bundle")
+    web_audit = store.get("web_research_audit")
+    enrichment_data = enrichment if isinstance(enrichment, dict) else {}
+    assumptions_data = assumptions if isinstance(assumptions, dict) else {}
+    web_audit_data = web_audit if isinstance(web_audit, dict) else {}
+    web_metrics = web_audit_data.get("metrics") if isinstance(web_audit_data.get("metrics"), dict) else {}
+    web_outputs = web_audit_data.get("outputs") if isinstance(web_audit_data.get("outputs"), dict) else {}
+    serper_billing = (
+        web_outputs.get("serper_billing_summary")
+        if isinstance(web_outputs.get("serper_billing_summary"), dict)
+        else {}
+    )
+    web_findings = _as_list(enrichment_data.get("web_findings"))
+    freshness_results = _as_list(enrichment_data.get("freshness_results"))
+    external_evidence = _as_list(enrichment_data.get("external_evidence"))
+    external_resolutions = _as_list(enrichment_data.get("external_resolutions"))
+    external_no_evidence = _as_list(enrichment_data.get("external_no_evidence"))
+    assumptions_list = _as_list(assumptions_data.get("assumptions"))
+    non_estimable = _as_list(assumptions_data.get("non_estimable"))
+
+    return {
+        "enrichment": {
+            "gap_analysis": _build_gap_analysis(store),
+            "external_sources": {
+                "executed": store.health.get("external_audit") == HEALTH_OK
+                or bool(external_evidence or external_resolutions or external_no_evidence),
+                "validated_count": len(external_evidence),
+                "resolution_count": len(external_resolutions),
+                "unused_count": _as_int(external_search.get("unused_total")),
+                "no_evidence_count": len(external_no_evidence),
+                "validated": external_search.get("validated", []),
+                "unused": external_search.get("unused", []),
+                "no_evidence": external_search.get("no_evidence", []),
+            },
+            "web_research": {
+                "executed": store.health.get("web_research_audit") == HEALTH_OK
+                or bool(web_findings),
+                "search_batch_count": _as_int(web_metrics.get("search_batch_count")),
+                "search_query_count": _as_int(web_metrics.get("search_query_count")),
+                "planned_search_query_count": _as_int(
+                    web_metrics.get("planned_search_query_count")
+                    or serper_billing.get("planned_search_query_count")
+                    or web_metrics.get("search_query_count")
+                ),
+                "actual_serper_call_count": _as_int(
+                    web_metrics.get("actual_serper_call_count")
+                    or serper_billing.get("actual_serper_call_count")
+                    or web_metrics.get("actual_serper_query_count")
+                ),
+                "successful_serper_call_count": _as_int(
+                    web_metrics.get("successful_serper_call_count")
+                    or serper_billing.get("successful_serper_call_count")
+                    or web_metrics.get("successful_serper_query_count")
+                ),
+                "tier1_site_call_count": _as_int(
+                    web_metrics.get("tier1_site_call_count")
+                    or serper_billing.get("tier1_site_call_count")
+                    or web_metrics.get("tier1_site_query_count")
+                ),
+                "open_call_count": _as_int(
+                    web_metrics.get("open_call_count")
+                    or serper_billing.get("open_call_count")
+                    or web_metrics.get("open_query_count")
+                ),
+                "skipped_open_call_count": _as_int(
+                    web_metrics.get("skipped_open_call_count")
+                    or serper_billing.get("skipped_open_call_count")
+                    or web_metrics.get("open_query_skipped_count")
+                ),
+                "estimated_max_serper_call_count": _as_int(
+                    web_metrics.get("estimated_max_serper_call_count")
+                    or serper_billing.get("estimated_max_serper_call_count")
+                    or web_metrics.get("estimated_max_serper_query_count")
+                ),
+                "web_finding_count": len(web_findings),
+                "national_finding_count": _as_int(web_metrics.get("national_finding_count")),
+                "comparative_finding_count": _as_int(web_metrics.get("comparative_finding_count")),
+                "tier1_finding_count": _count_by_value(web_findings, "source_tier", "tier1"),
+                "open_finding_count": _count_by_value(web_findings, "source_tier", "open"),
+                "findings": _preview_records(
+                    web_findings,
+                    ("city", "field", "value", "unit", "source_url", "source_type", "source_tier"),
+                ),
+                "national_findings": _preview_records(
+                    _as_list(web_outputs.get("national_findings")),
+                    ("city", "field", "value", "unit", "source_url", "source_type", "source_tier"),
+                ),
+                "comparative_findings": _preview_records(
+                    _as_list(web_outputs.get("comparative_findings")),
+                    ("city", "field", "value", "unit", "source_url", "source_type", "source_tier"),
+                ),
+            },
+            "freshness": {
+                "executed": bool(freshness_results),
+                "freshness_result_count": len(freshness_results),
+                "classification_counts": _count_records_by_key(freshness_results, "classification"),
+                "results": _preview_records(
+                    freshness_results,
+                    ("city", "field", "ccc_value", "web_value", "classification", "reason", "web_source_url"),
+                ),
+            },
+        },
+        "assumptions": {
+            "executed": isinstance(assumptions, dict),
+            "assumption_count": len(assumptions_list),
+            "non_estimable_count": len(non_estimable),
+            "reason_breakdown": reason_breakdown,
+            "assumptions": _preview_records(
+                assumptions_list,
+                ("city", "field_name", "method_used", "confidence", "basis"),
+            ),
+            "non_estimable": _preview_records(
+                non_estimable,
+                ("city", "field_name", "gap_description", "explanation", "recommendation"),
+            ),
+        },
+    }
+
+
+def _as_list(value: Any) -> list[Any]:
+    """Return *value* when it is a list, otherwise an empty list."""
+    return value if isinstance(value, list) else []
+
+
+def _count_by_value(records: list[Any], key: str, expected: str) -> int:
+    """Count dict records where ``key`` equals ``expected``."""
+    return sum(
+        1
+        for record in records
+        if isinstance(record, dict) and str(record.get(key, "")).casefold() == expected
+    )
+
+
+def _count_records_by_key(records: list[Any], key: str) -> dict[str, int]:
+    """Count non-empty string values for ``key`` across dict records."""
+    counts: dict[str, int] = {}
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        value = str(record.get(key, "")).strip()
+        if value:
+            counts[value] = counts.get(value, 0) + 1
+    return counts
+
+
+def _preview_records(
+    records: list[Any],
+    keys: tuple[str, ...],
+    limit: int = 8,
+) -> list[dict[str, Any]]:
+    """Return a bounded, UI-safe preview of selected record keys."""
+    preview: list[dict[str, Any]] = []
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        item = {key: record.get(key) for key in keys if key in record}
+        if item:
+            preview.append(item)
+        if len(preview) >= limit:
+            break
+    return preview
+
+
 def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
     """Assemble the normalized artifact payload for one run directory."""
     store = _ArtifactStore(run_dir)
@@ -700,6 +873,7 @@ def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
     gap_analysis = _build_gap_analysis(store)
     external_search = _build_external_search(store)
     enrichment_steps = _build_enrichment_steps(store, reason_breakdown)
+    stage_details = _build_stage_details(store, external_search, reason_breakdown)
     artifact_health = {key: store.health.get(key, HEALTH_MISSING) for key in _ARTIFACT_SPECS}
     return {
         "fields": fields,
@@ -707,6 +881,7 @@ def build_run_artifacts(run_dir: Path) -> dict[str, Any]:
         "enrichment_steps": enrichment_steps,
         "gap_analysis": gap_analysis,
         "external_search": external_search,
+        "stage_details": stage_details,
         "artifact_health": artifact_health,
         # ``degraded`` means an artifact existed but could not be parsed — a real
         # read regression, distinct from a stage simply being absent/disabled.

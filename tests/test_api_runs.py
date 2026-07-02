@@ -18,6 +18,11 @@ from backend.modules.markdown_researcher.services import build_markdown_chunks_f
 from backend.utils.artifact_writer import ArtifactWriter
 from backend.utils.config import AppConfig
 from backend.utils.paths import RunPaths, create_run_paths
+from backend.utils.planned_stages import (
+    PLANNED_STAGES_ALIAS,
+    PLANNED_STAGES_FILENAME,
+    build_planned_stages_payload,
+)
 from tests.support import build_test_app_config
 
 
@@ -1770,6 +1775,181 @@ def test_api_run_artifacts_serves_in_progress_runs(tmp_path: Path) -> None:
     # in-progress state), which must NOT flip the degraded flag.
     assert set(payload["artifact_health"].values()) == {"missing"}
     assert payload["degraded"] is False
+
+
+def test_api_run_status_uses_persisted_planned_stages_only_for_new_runs(tmp_path: Path) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config.enrichment.enabled = True
+    planned_run_id = "planned-status-run"
+    legacy_run_id = "legacy-status-run"
+    planned_paths = _write_run_listing_artifacts(
+        question="Planned run",
+        run_id=planned_run_id,
+        status="running",
+        config=config,
+    )
+    legacy_paths = _write_run_listing_artifacts(
+        question="Legacy run",
+        run_id=legacy_run_id,
+        status="running",
+        config=config,
+    )
+    writer = ArtifactWriter(planned_paths.base_dir, planned_run_id)
+    writer.write_stage_file(
+        "input_snapshot",
+        PLANNED_STAGES_FILENAME,
+        build_planned_stages_payload(config),
+        alias=PLANNED_STAGES_ALIAS,
+    )
+    progress_payload = {
+        "version": 1,
+        "steps": [
+            {
+                "id": "gap_analysis",
+                "stage_name": "enrichment",
+                "stage_number": 8,
+                "label": "Analyzing data gaps",
+                "status": "running",
+                "started_at": "2026-01-01T00:00:00Z",
+                "completed_at": None,
+                "items": [{"text": "16 fields decomposed"}],
+            }
+        ],
+    }
+    (planned_paths.base_dir / "progress.json").write_text(
+        json.dumps(progress_payload),
+        encoding="utf-8",
+    )
+    (legacy_paths.base_dir / "progress.json").write_text(
+        json.dumps(progress_payload),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        planned_response = client.get(f"/api/v1/runs/{planned_run_id}/status")
+        legacy_response = client.get(f"/api/v1/runs/{legacy_run_id}/status")
+
+    assert planned_response.status_code == 200
+    planned_steps = planned_response.json()["steps"]
+    assert len(planned_steps) > 1
+    enrichment = next(step for step in planned_steps if step["id"] == "enrichment")
+    assert enrichment["status"] == "running"
+    assert enrichment["items"][0]["text"] == "16 fields decomposed"
+    assert planned_steps[0]["status"] == "pending"
+
+    assert legacy_response.status_code == 200
+    legacy_steps = legacy_response.json()["steps"]
+    assert [step["id"] for step in legacy_steps] == ["gap_analysis"]
+
+
+def test_api_run_status_falls_back_to_raw_progress_when_planned_stages_are_unreadable(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    run_id = "planned-status-fallback"
+    paths = _write_run_listing_artifacts(
+        question="Fallback run",
+        run_id=run_id,
+        status="running",
+        config=config,
+    )
+    planned_path = paths.base_dir / "stage_files" / "001_input_snapshot" / PLANNED_STAGES_FILENAME
+    planned_path.parent.mkdir(parents=True, exist_ok=True)
+    planned_path.write_text("{not valid json", encoding="utf-8")
+    progress_payload = {
+        "version": 1,
+        "steps": [
+            {
+                "id": "gap_analysis",
+                "stage_name": "enrichment",
+                "stage_number": 8,
+                "label": "Analyzing data gaps",
+                "status": "running",
+                "started_at": "2026-01-01T00:00:00Z",
+                "completed_at": None,
+                "items": [{"text": "16 fields decomposed"}],
+            }
+        ],
+    }
+    (paths.base_dir / "progress.json").write_text(
+        json.dumps(progress_payload),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/status")
+
+    assert response.status_code == 200
+    steps = response.json()["steps"]
+    assert [step["id"] for step in steps] == ["gap_analysis"]
+    assert steps[0]["status"] == "running"
+    assert steps[0]["items"][0]["text"] == "16 fields decomposed"
+
+
+def test_api_run_status_keeps_progress_status_when_stage_detail_has_no_explicit_status(
+    tmp_path: Path,
+) -> None:
+    runs_dir = tmp_path / "output"
+    markdown_dir = tmp_path / "documents"
+    markdown_dir.mkdir(parents=True, exist_ok=True)
+    config = _build_config(runs_dir=runs_dir, markdown_dir=markdown_dir)
+    config.enrichment.enabled = True
+    run_id = "planned-status-explicit-only"
+    paths = _write_run_listing_artifacts(
+        question="Explicit status run",
+        run_id=run_id,
+        status="running",
+        config=config,
+    )
+    writer = ArtifactWriter(paths.base_dir, run_id)
+    writer.write_stage_file(
+        "input_snapshot",
+        PLANNED_STAGES_FILENAME,
+        build_planned_stages_payload(config),
+        alias=PLANNED_STAGES_ALIAS,
+    )
+    progress_payload = {
+        "version": 1,
+        "steps": [
+            {
+                "id": "gap_analysis",
+                "stage_name": "enrichment",
+                "stage_number": 8,
+                "label": "Analyzing data gaps",
+                "status": "running",
+                "started_at": "2026-01-01T00:00:00Z",
+                "completed_at": None,
+                "items": [{"text": "16 fields decomposed"}],
+            }
+        ],
+    }
+    (paths.base_dir / "progress.json").write_text(
+        json.dumps(progress_payload),
+        encoding="utf-8",
+    )
+    (paths.base_dir / "stages").mkdir(parents=True, exist_ok=True)
+    (paths.base_dir / "stages" / "008_enrichment.json").write_text(
+        json.dumps({"outputs": {"web_finding_count": 3}}, ensure_ascii=True, indent=2),
+        encoding="utf-8",
+    )
+
+    app = create_app(runs_dir=runs_dir, max_workers=1, markdown_dir=markdown_dir)
+    with TestClient(app) as client:
+        response = client.get(f"/api/v1/runs/{run_id}/status")
+
+    assert response.status_code == 200
+    steps = response.json()["steps"]
+    enrichment = next(step for step in steps if step["id"] == "enrichment")
+    assert enrichment["status"] == "running"
+    assert enrichment["items"][0]["text"] == "16 fields decomposed"
 
 
 def test_api_output_and_context_resolve_stale_container_artifact_paths(

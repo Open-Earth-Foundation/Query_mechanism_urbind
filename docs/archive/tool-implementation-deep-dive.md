@@ -6,7 +6,7 @@ Build a controlled tool layer that lets an LLM search tagged external Markdown
 sources without raw shell access. The tool layer should feel flexible enough for
 agentic research, but stay bounded, auditable, and safe in production.
 
-The MVP tool contract from `plan.md` is:
+The MVP tool contract from `external-tagged-markdown-search-plan.md` is:
 
 1. `get_tag_options`
 2. `list_candidate_sources`

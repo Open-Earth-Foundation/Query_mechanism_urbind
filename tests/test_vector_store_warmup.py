@@ -7,6 +7,7 @@ import pytest
 
 from backend.api.services import vector_store_warmup as warmup_module
 from backend.api.services.vector_store_warmup import VectorStoreWarmup
+from backend.modules.vector_store.update_lock import VectorStoreUpdateLockError
 from tests.support import build_test_app_config
 
 
@@ -155,7 +156,9 @@ def test_vector_store_warmup_records_successful_update(
         "max_tokens": 30,
         "dry_run": False,
         "update_mode": "incremental_update",
-        "changed_files": [
+        "changed_file_entries": 1,
+        "deleted_file_entries": 0,
+        "changed_files_sample": [
             {
                 "source_path": "documents/Aachen.md",
                 "status": "modified",
@@ -164,7 +167,7 @@ def test_vector_store_warmup_records_successful_update(
                 "removed_previous_chunk_count": 3,
             }
         ],
-        "deleted_files": [],
+        "deleted_files_sample": [],
     }
     latest_artifact = snapshot["latest_artifact"]
     assert latest_artifact == "system/vector_store_warmup/latest.json"
@@ -178,7 +181,20 @@ def test_vector_store_warmup_records_successful_update(
     assert artifact["event_type"] == "vector_store_update"
     assert artifact["trigger"] == "startup"
     assert artifact["status"] == "completed"
-    assert artifact["stats"] == snapshot["stats"]
+    assert artifact["update_interpretation"] == "incremental_changes"
+    assert artifact["manifest_write_occurred"] is True
+    assert artifact["manifest_write_audit_applies_to_this_run"] is False
+    assert artifact["manifest_write_audit_latest_path"] == "system/vector_store_manifest_writes/latest.json"
+    assert artifact["stats"]["changed_files"] == [
+        {
+            "source_path": "documents/Aachen.md",
+            "status": "modified",
+            "previous_chunk_count": 3,
+            "current_chunk_count": 4,
+            "removed_previous_chunk_count": 3,
+        }
+    ]
+    assert artifact["stats"]["deleted_files"] == []
     assert artifact["vector_store_snapshot"]["auto_update"]["update_mode"] == "incremental_update"
     assert artifact["vector_store_snapshot"]["auto_update"]["stats"]["changed_files"] == [
         {
@@ -191,6 +207,65 @@ def test_vector_store_warmup_records_successful_update(
     ]
     assert calls == [True, False]
     assert warmup.is_blocking_runs() is False
+
+
+def test_vector_store_warmup_marks_existing_writer_lock_as_running(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Warm-up should report running when another process already owns the write lock."""
+    config = build_test_app_config(runs_dir=tmp_path / "runs", markdown_dir=tmp_path)
+    config.vector_store.enabled = True
+    config.vector_store.auto_update_on_run = True
+    config.vector_store.chroma_persist_path = tmp_path / "chroma"
+    config.vector_store.index_manifest_path = tmp_path / "chroma" / "index_manifest.json"
+    started_at = datetime.now(timezone.utc).isoformat()
+
+    def _fake_update_markdown_index(**kwargs):
+        if kwargs["dry_run"]:
+            return SimpleNamespace(
+                files_indexed=6,
+                files_changed=1,
+                files_unchanged=5,
+                files_deleted=0,
+                chunks_created=4,
+                table_chunks=0,
+                min_tokens=1,
+                avg_tokens=1.0,
+                max_tokens=1,
+                dry_run=True,
+                update_mode="incremental_update",
+                changed_files=[{"source_path": "documents/Aachen.md", "status": "modified"}],
+                deleted_files=[],
+            )
+        raise VectorStoreUpdateLockError(
+            lock_path=config.vector_store.chroma_persist_path / "vector_store_update.lock",
+            holder={
+                "operation": "update_vector_store",
+                "pid": 1234,
+                "hostname": "test-host",
+                "started_at": started_at,
+            },
+        )
+
+    monkeypatch.setattr(
+        warmup_module,
+        "update_markdown_index",
+        _fake_update_markdown_index,
+    )
+    warmup = VectorStoreWarmup()
+
+    warmup.start(config=config, docs_dir=tmp_path)
+    warmup.shutdown(wait=True)
+
+    snapshot = warmup.snapshot()
+    assert snapshot["status"] == "running"
+    assert "already in progress" in snapshot["message"]
+    assert warmup.is_blocking_runs() is True
+    status_path = config.vector_store.chroma_persist_path / "update_status.json"
+    payload = json.loads(status_path.read_text(encoding="utf-8"))
+    assert payload["status"] == "running"
+    assert "already in progress" in payload["message"]
 
 
 def test_vector_store_warmup_logs_indexed_count_for_full_rebuild(

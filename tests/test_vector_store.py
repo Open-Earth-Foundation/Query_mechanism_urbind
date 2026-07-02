@@ -13,10 +13,13 @@ from backend.modules.vector_store.indexer import (
     build_markdown_index,
     update_markdown_index,
 )
-from backend.modules.vector_store.manifest import load_manifest
-from backend.modules.vector_store.manifest import build_chunk_id
+from backend.modules.vector_store.manifest import build_chunk_id, load_manifest, save_manifest
 from backend.modules.vector_store.markdown_blocks import parse_markdown_blocks
 from backend.modules.vector_store.models import IndexedChunk
+from backend.modules.vector_store.update_lock import (
+    VectorStoreUpdateLockError,
+    acquire_vector_store_update_lock,
+)
 from backend.modules.vector_store.chunk_packer import pack_blocks
 from backend.modules.vector_store.table_utils import split_markdown_table_by_row_groups
 from backend.utils.tokenization import count_tokens
@@ -157,6 +160,53 @@ def test_build_chunk_id_is_deterministic() -> None:
     chunk_id_3 = build_chunk_id("documents/Munich.md", 3, "abc123")
     assert chunk_id_1 == chunk_id_2
     assert chunk_id_1 != chunk_id_3
+
+
+def test_save_manifest_records_reason_and_caller_in_audit(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Manifest writes should leave a caller-aware audit trail under output/system."""
+    monkeypatch.chdir(tmp_path)
+    manifest_path = tmp_path / ".chroma" / "index_manifest.json"
+    save_manifest(
+        manifest_path,
+        {
+            "updated_at": "2026-07-01T00:00:00+00:00",
+            "files": {
+                "documents/Munich.md": {
+                    "file_hash": "hash-1",
+                    "chunk_ids": ["chunk-1", "chunk-2"],
+                }
+            },
+        },
+        reason="unit_test_manifest_write",
+        metadata={"dry_run": False, "files_indexed": 1},
+    )
+
+    latest_path = tmp_path / "output" / "system" / "vector_store_manifest_writes" / "latest.json"
+    payload = json.loads(latest_path.read_text(encoding="utf-8"))
+    assert payload["manifest_resolved_path"] == str(manifest_path.resolve(strict=False))
+    assert payload["file_count"] == 1
+    assert payload["chunk_count"] == 2
+    assert payload["reason"] == "unit_test_manifest_write"
+    assert payload["caller_function"] == "test_save_manifest_records_reason_and_caller_in_audit"
+    assert payload["metadata"] == {"dry_run": False, "files_indexed": 1}
+
+
+def test_update_markdown_index_rejects_overlapping_writer_lock(tmp_path: Path) -> None:
+    """Non-dry-run updates should fail fast when another process holds the write lock."""
+    docs_dir = tmp_path / "documents"
+    docs_dir.mkdir(parents=True)
+    (docs_dir / "Munich.md").write_text("# Munich\n\nLatest content.", encoding="utf-8")
+    config = _build_config(tmp_path)
+
+    with acquire_vector_store_update_lock(
+        config.vector_store.chroma_persist_path,
+        operation="other_process_update",
+    ):
+        with pytest.raises(VectorStoreUpdateLockError, match="operation=other_process_update"):
+            update_markdown_index(config=config, docs_dir=docs_dir, dry_run=False)
 
 
 def test_manifest_update_skips_unchanged_and_updates_changed(

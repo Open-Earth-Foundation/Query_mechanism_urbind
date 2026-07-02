@@ -191,12 +191,68 @@ def _build_web_research_artifact(
     freshness_results: list[dict[str, Any]],
     national_findings: list[dict[str, Any]],
     comparative_findings: list[dict[str, Any]],
+    scrape_failures: list[dict[str, Any]],
+    scrape_success_count: int,
+    search_execution_summary: dict[str, Any],
 ) -> dict[str, Any]:
     """Build the web-research enrichment sub-artifact."""
     added_city_fields = city_field_pairs(web_findings)
     freshness_city_fields = city_field_pairs(freshness_results)
+    scrape_failure_count = len(scrape_failures)
+    scrape_summary = _summarize_scrape_failures(scrape_failures)
+    search_execution_metrics = search_execution_summary.get("metrics", {})
+    if not isinstance(search_execution_metrics, dict):
+        search_execution_metrics = {}
+    search_execution_config = search_execution_summary.get("config", {})
+    if not isinstance(search_execution_config, dict):
+        search_execution_config = {}
+    search_execution_batches = search_execution_summary.get("batches", [])
+    if not isinstance(search_execution_batches, list):
+        search_execution_batches = []
+    failed_batch_groups = search_execution_summary.get("failed_batch_groups", [])
+    if not isinstance(failed_batch_groups, list):
+        failed_batch_groups = []
+    search_execution_payload = {
+        "config": search_execution_config,
+        "metrics": search_execution_metrics,
+        "batches": search_execution_batches,
+        "failed_batch_groups": failed_batch_groups,
+    }
+    planned_search_query_count = sum(
+        len(batch.get("queries", []))
+        for batch in search_batches
+        if isinstance(batch.get("queries"), list)
+    )
+    actual_serper_call_count = search_execution_metrics.get(
+        "actual_serper_query_count"
+    )
+    successful_serper_call_count = search_execution_metrics.get(
+        "successful_serper_query_count"
+    )
+    tier1_site_call_count = search_execution_metrics.get("tier1_site_query_count")
+    open_call_count = search_execution_metrics.get("open_query_count")
+    skipped_open_call_count = search_execution_metrics.get("open_query_skipped_count")
+    estimated_max_serper_call_count = search_execution_metrics.get(
+        "estimated_max_serper_query_count"
+    )
+    serper_billing_summary = {
+        "planned_search_query_count": planned_search_query_count,
+        "actual_serper_call_count": actual_serper_call_count,
+        "successful_serper_call_count": successful_serper_call_count,
+        "tier1_site_call_count": tier1_site_call_count,
+        "open_call_count": open_call_count,
+        "skipped_open_call_count": skipped_open_call_count,
+        "estimated_max_serper_call_count": estimated_max_serper_call_count,
+        "tier1_first_search": search_execution_config.get("tier1_first_search"),
+        "max_retries_per_worker": search_execution_config.get(
+            "max_retries_per_worker"
+        ),
+    }
+    status = "skipped"
+    if executed:
+        status = "completed_with_warnings" if scrape_failure_count else "completed"
     return {
-        "status": "completed" if executed else "skipped",
+        "status": status,
         "skip_reason": None if executed else "disabled_or_no_gaps",
         "flags": {
             "web_research_enabled": enabled,
@@ -211,22 +267,123 @@ def _build_web_research_artifact(
             "comparative_findings": comparative_findings,
             "added_city_fields": added_city_fields,
             "freshness_touched_city_fields": freshness_city_fields,
+            "scrape_failures": scrape_failures,
+            "scrape_failure_summary": scrape_summary,
+            "search_execution_summary": search_execution_payload,
+            "failed_batch_groups": failed_batch_groups,
+            "serper_billing_summary": serper_billing_summary,
         },
         "metrics": {
             "search_batch_count": len(search_batches),
-            "search_query_count": sum(
-                len(batch.get("queries", []))
-                for batch in search_batches
-                if isinstance(batch.get("queries"), list)
-            ),
+            "search_query_count": planned_search_query_count,
+            "planned_search_query_count": planned_search_query_count,
             "web_finding_count": len(web_findings),
             "freshness_result_count": len(freshness_results),
             "national_finding_count": len(national_findings),
             "comparative_finding_count": len(comparative_findings),
             "added_city_field_count": len(added_city_fields),
             "freshness_touched_city_field_count": len(freshness_city_fields),
+            "scrape_attempt_count": scrape_success_count + scrape_failure_count,
+            "scrape_success_count": scrape_success_count,
+            "scrape_failure_count": scrape_failure_count,
+            "scrape_warning_count": scrape_failure_count,
+            "failed_batch_group_count": len(failed_batch_groups),
+            "actual_serper_query_count": actual_serper_call_count,
+            "actual_serper_call_count": actual_serper_call_count,
+            "serper_call_count": actual_serper_call_count,
+            "successful_serper_query_count": successful_serper_call_count,
+            "successful_serper_call_count": successful_serper_call_count,
+            "tier1_site_query_count": tier1_site_call_count,
+            "tier1_site_call_count": tier1_site_call_count,
+            "open_query_count": open_call_count,
+            "open_call_count": open_call_count,
+            "open_query_skipped_count": skipped_open_call_count,
+            "skipped_open_call_count": skipped_open_call_count,
+            "estimated_max_serper_query_count": estimated_max_serper_call_count,
+            "estimated_max_serper_call_count": estimated_max_serper_call_count,
         },
     }
+
+
+def _summarize_scrape_failures(
+    scrape_failures: list[dict[str, Any]],
+) -> dict[str, dict[str, int]]:
+    """Summarize scrape failures for the compact enrichment stage detail."""
+    failures_by_type = Counter(
+        str(item.get("error_type"))
+        for item in scrape_failures
+        if item.get("error_type")
+    )
+    failures_by_domain = Counter(
+        str(item.get("domain"))
+        for item in scrape_failures
+        if item.get("domain")
+    )
+    return {
+        "scrape_failures_by_type": dict(failures_by_type),
+        "scrape_failures_by_domain": dict(failures_by_domain),
+    }
+
+
+def _merge_group_search_execution_summary(
+    target: dict[str, Any],
+    source: dict[str, Any],
+) -> None:
+    """Merge one batch-group search execution summary into the run summary."""
+    if not source:
+        return
+
+    target.setdefault("config", source.get("config", {}))
+    target_metrics = target.setdefault("metrics", {})
+    source_metrics = source.get("metrics", {})
+    if isinstance(source_metrics, dict):
+        for key, value in source_metrics.items():
+            if isinstance(value, int):
+                target_metrics[key] = int(target_metrics.get(key) or 0) + value
+
+    target_batches = target.setdefault("batches", [])
+    source_batches = source.get("batches", [])
+    if isinstance(source_batches, list):
+        target_batches.extend(source_batches)
+
+
+def _merge_group_web_research_diagnostics(
+    *,
+    scrape_failures_target: list[dict[str, Any]],
+    scrape_success_count: int,
+    search_execution_target: dict[str, Any],
+    group_scrape_failures: list[dict[str, Any]] | None,
+    group_scrape_stats: dict[str, int] | None,
+    group_search_execution: dict[str, Any] | None,
+) -> int:
+    """Merge one batch group's collected diagnostics into the run totals."""
+    scrape_failures_target.extend(group_scrape_failures or [])
+    scrape_success_count += (group_scrape_stats or {}).get("scrape_success_count", 0)
+    _merge_group_search_execution_summary(
+        search_execution_target,
+        group_search_execution or {},
+    )
+    return scrape_success_count
+
+
+def _record_failed_batch_group(
+    search_execution_summary: dict[str, Any],
+    *,
+    label: str,
+    error: Exception,
+) -> None:
+    """Persist one failed parallel batch-group marker into the search summary."""
+    failures = search_execution_summary.setdefault("failed_batch_groups", [])
+    if not isinstance(failures, list):
+        failures = []
+        search_execution_summary["failed_batch_groups"] = failures
+    failures.append(
+        {
+            "group": label,
+            "error_type": type(error).__name__,
+            "error": str(error),
+        }
+    )
 
 
 def _write_context_handoff_stage(
@@ -372,6 +529,9 @@ def run_enrichment_pipeline(
         external_no_evidence = []
         external_tool_calls: list[dict[str, object]] = []
         external_search_audit: dict[str, Any] = {}
+        web_research_scrape_failures: list[dict[str, Any]] = []
+        web_research_scrape_success_count = 0
+        web_research_search_execution_summary: dict[str, Any] = {}
         search_batches = []
 
         # Governed external Markdown search runs by default when tagged sources exist.
@@ -461,27 +621,69 @@ def run_enrichment_pipeline(
 
             if batch_groups:
                 with ThreadPoolExecutor(max_workers=len(batch_groups)) as pool:
-                    futures = {
-                        pool.submit(
+                    futures = {}
+                    scrape_failures_by_future: dict[Any, list[dict[str, Any]]] = {}
+                    scrape_stats_by_future: dict[Any, dict[str, int]] = {}
+                    search_execution_by_future: dict[Any, dict[str, Any]] = {}
+                    for label, batches in batch_groups.items():
+                        group_scrape_failures: list[dict[str, Any]] = []
+                        group_scrape_stats: dict[str, int] = {}
+                        group_search_execution: dict[str, Any] = {}
+                        future = pool.submit(
                             execute_search_batches,
                             batches,
                             config,
                             api_key,
                             progress,
-                        ): label
-                        for label, batches in batch_groups.items()
-                    }
+                            group_scrape_failures,
+                            group_scrape_stats,
+                            group_search_execution,
+                        )
+                        futures[future] = label
+                        scrape_failures_by_future[future] = group_scrape_failures
+                        scrape_stats_by_future[future] = group_scrape_stats
+                        search_execution_by_future[future] = group_search_execution
                     for future in as_completed(futures):
                         label = futures[future]
                         try:
                             findings = future.result()
-                        except Exception:
+                        except Exception as exc:
+                            web_research_scrape_success_count = (
+                                _merge_group_web_research_diagnostics(
+                                    scrape_failures_target=web_research_scrape_failures,
+                                    scrape_success_count=web_research_scrape_success_count,
+                                    search_execution_target=web_research_search_execution_summary,
+                                    group_scrape_failures=scrape_failures_by_future.get(future),
+                                    group_scrape_stats=scrape_stats_by_future.get(future),
+                                    group_search_execution=search_execution_by_future.get(future),
+                                )
+                            )
+                            _record_failed_batch_group(
+                                web_research_search_execution_summary,
+                                label=label,
+                                error=exc,
+                            )
                             logger.warning(
                                 "Batch group %s failed.",
                                 label,
                                 exc_info=True,
                             )
+                            if progress:
+                                progress.add_item(
+                                    "web_research",
+                                    f"{label.title()} batch group failed; continuing",
+                                )
                             continue
+                        web_research_scrape_success_count = (
+                            _merge_group_web_research_diagnostics(
+                                scrape_failures_target=web_research_scrape_failures,
+                                scrape_success_count=web_research_scrape_success_count,
+                                search_execution_target=web_research_search_execution_summary,
+                                group_scrape_failures=scrape_failures_by_future.get(future),
+                                group_scrape_stats=scrape_stats_by_future.get(future),
+                                group_search_execution=search_execution_by_future.get(future),
+                            )
+                        )
                         if label == "city":
                             web_findings = findings
                         elif label == "national":
@@ -593,6 +795,9 @@ def run_enrichment_pipeline(
                 comparative_findings=[
                     record.model_dump(mode="json") for record in comparative_findings
                 ],
+                scrape_failures=web_research_scrape_failures,
+                scrape_success_count=web_research_scrape_success_count,
+                search_execution_summary=web_research_search_execution_summary,
             ),
         }
 

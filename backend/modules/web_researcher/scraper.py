@@ -56,19 +56,32 @@ class FirecrawlScraper:
     """Firecrawl-based web scraper with concurrency limiting."""
 
     def __init__(self, api_key: str | None = None) -> None:
-        self.api_key = api_key or os.getenv("FIRECRAWL_API_KEY", "")
+        """Initialize the scraper with an explicit key or the environment key."""
+        self.api_key = (
+            api_key if api_key is not None else os.getenv("FIRECRAWL_API_KEY", "")
+        )
         self._semaphore = threading.Semaphore(_CONCURRENT_SCRAPE_LIMIT)
+        self._failure_lock = threading.Lock()
+        self._failures: list[dict[str, Any]] = []
         self._scrape_count = 0
 
     @property
     def scrape_count(self) -> int:
         return self._scrape_count
 
+    @property
+    def scrape_failures(self) -> list[dict[str, Any]]:
+        """Return a snapshot of structured scrape failures captured this run."""
+        with self._failure_lock:
+            return list(self._failures)
+
     def scrape(
         self,
         url: str,
         max_chars: int = _MAX_CONTENT_CHARS,
         timeout: float = _DEFAULT_TIMEOUT,
+        query: str | None = None,
+        batch_id: str | None = None,
     ) -> ScrapeResult:
         """Scrape a single URL via Firecrawl.
 
@@ -77,6 +90,13 @@ class FirecrawlScraper:
         """
         if not self.api_key:
             logger.warning("Firecrawl API key not configured; skipping scrape.")
+            self._record_failure(
+                url=url,
+                error_type="no_api_key",
+                error="Firecrawl API key not configured.",
+                query=query,
+                batch_id=batch_id,
+            )
             return ScrapeResult(url=url, success=False, error="no_api_key")
 
         if _has_skip_extension(url):
@@ -84,13 +104,15 @@ class FirecrawlScraper:
             return ScrapeResult(url=url, success=False, error="unsupported_file_type")
 
         with self._semaphore:
-            return self._do_scrape(url, max_chars, timeout)
+            return self._do_scrape(url, max_chars, timeout, query, batch_id)
 
     def _do_scrape(
         self,
         url: str,
         max_chars: int,
         timeout: float,
+        query: str | None,
+        batch_id: str | None,
     ) -> ScrapeResult:
         """Internal scrape implementation."""
         headers = {
@@ -116,10 +138,18 @@ class FirecrawlScraper:
 
             success = data.get("success", False)
             if not success:
+                error = data.get("error", "firecrawl_failure")
+                self._record_failure(
+                    url=url,
+                    error_type="firecrawl_failure",
+                    error=str(error),
+                    query=query,
+                    batch_id=batch_id,
+                )
                 return ScrapeResult(
                     url=url,
                     success=False,
-                    error=data.get("error", "firecrawl_failure"),
+                    error=error,
                 )
 
             result_data = data.get("data", {})
@@ -139,15 +169,53 @@ class FirecrawlScraper:
             return ScrapeResult(url=url, content=content, title=title, success=True)
 
         except httpx.HTTPStatusError as exc:
+            error_type = f"http_{exc.response.status_code}"
             logger.warning(
                 "Firecrawl HTTP error: status=%d url=%r",
                 exc.response.status_code,
                 url,
             )
-            return ScrapeResult(url=url, success=False, error=f"http_{exc.response.status_code}")
+            self._record_failure(
+                url=url,
+                error_type=error_type,
+                error=str(exc),
+                query=query,
+                batch_id=batch_id,
+            )
+            return ScrapeResult(url=url, success=False, error=error_type)
         except Exception as exc:
             logger.warning("Firecrawl scrape failed for url=%r", url, exc_info=True)
+            self._record_failure(
+                url=url,
+                error_type=type(exc).__name__,
+                error=str(exc),
+                query=query,
+                batch_id=batch_id,
+            )
             return ScrapeResult(url=url, success=False, error=str(exc))
+
+    def _record_failure(
+        self,
+        *,
+        url: str,
+        error_type: str,
+        error: str,
+        query: str | None,
+        batch_id: str | None,
+    ) -> None:
+        """Store a compact failure record for the web-research audit artifact."""
+        record = {
+            "url": url,
+            "domain": urlparse(url).netloc.lower(),
+            "provider": "firecrawl",
+            "batch_id": batch_id,
+            "query": query,
+            "error_type": error_type,
+            "error": error,
+            "severity": "warning",
+        }
+        with self._failure_lock:
+            self._failures.append(record)
 
 
 def scrape_url_simple(url: str, max_chars: int = _MAX_CONTENT_CHARS) -> ScrapeResult:

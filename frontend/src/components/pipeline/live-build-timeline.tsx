@@ -14,11 +14,12 @@ import type {
   PipelineStep,
   PipelineStepItem,
   RunArtifactsResponse,
+  WebResearchFindingPreview,
 } from "@/lib/api";
 import { humanizeField } from "@/components/pipeline/status-style";
 import { formatCityLabel } from "@/lib/utils";
 
-const TERMINAL_STEP_STATUSES = new Set(["completed", "skipped", "error"]);
+const TERMINAL_STEP_STATUSES = new Set(["completed", "skipped", "disabled", "error"]);
 
 // Visual styling only — the human label is owned by the backend (reason_label)
 // and read off the field records so this chip never drifts from the cards.
@@ -35,6 +36,7 @@ function StepIcon({ status }: { status: string }) {
     case "running":
       return <Loader2 className="h-4 w-4 shrink-0 animate-spin text-amber-600" />;
     case "skipped":
+    case "disabled":
       return <MinusCircle className="h-4 w-4 shrink-0 text-slate-400" />;
     case "error":
       return <XCircle className="h-4 w-4 shrink-0 text-rose-500" />;
@@ -74,6 +76,19 @@ function isBlockItem(item: PipelineStepItem): boolean {
   );
 }
 
+function describeFreshnessClassification(name: string): string {
+  switch (name.toLowerCase()) {
+    case "consistent":
+      return "The web evidence matches the CCC value closely enough that no freshness warning was raised.";
+    case "superseded":
+      return "The web evidence suggests the CCC value is outdated or has likely been replaced by a newer figure.";
+    case "uncertain":
+      return "The web evidence was not strong or consistent enough to confidently confirm whether the CCC value is still current.";
+    default:
+      return `Freshness review classified this comparison as ${name.replace(/_/g, " ")}.`;
+  }
+}
+
 /** Streaming items (web findings, classifications) as chips. */
 function BlockCards({ items }: { items: PipelineStepItem[] }) {
   const blocks = items.filter(isBlockItem);
@@ -110,7 +125,51 @@ function BlockCards({ items }: { items: PipelineStepItem[] }) {
   );
 }
 
-function stepSummaryLine(step: PipelineStep): string | null {
+function WebFindingPreview({ finding }: { finding: WebResearchFindingPreview }) {
+  const label = [
+    finding.city ? formatCityLabel(finding.city) : null,
+    finding.field ? humanizeField(finding.field) : null,
+  ]
+    .filter(Boolean)
+    .join(" / ");
+  return (
+    <div className="flex flex-wrap items-center gap-1.5">
+      <span className="font-medium text-slate-700">{label || "Web finding"}</span>
+      {finding.value !== undefined && finding.value !== null ? (
+        <span className="rounded bg-slate-100 px-1.5 py-0.5 text-slate-700">
+          {finding.value}
+          {finding.unit ? ` ${finding.unit}` : ""}
+        </span>
+      ) : null}
+      {finding.source_url ? (
+        <a
+          href={finding.source_url}
+          target="_blank"
+          rel="noreferrer"
+          className="max-w-[220px] truncate text-sky-700 hover:underline"
+        >
+          {finding.source_tier === "tier1" ? "tier-1 source" : "web source"}
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
+function stepSummaryLine(step: PipelineStep, artifacts?: RunArtifactsResponse | null): string | null {
+  if (step.id === "enrichment") {
+    const detail = artifacts?.stage_details?.enrichment;
+    const classified = detail?.gap_analysis?.fields.length ?? 0;
+    const findings = detail?.web_research?.web_finding_count ?? 0;
+    if (classified > 0 || findings > 0) {
+      return `${classified} fields classified, ${findings} web findings`;
+    }
+  }
+  if (step.id === "assumptions") {
+    const detail = artifacts?.stage_details?.assumptions;
+    if (detail?.executed) {
+      return `${detail.assumption_count} estimates, ${detail.non_estimable_count} non-estimable`;
+    }
+  }
   const plain = step.items.filter((i) => !i.item_type && i.text);
   const concise = plain.find((i) => /\d/.test(i.text) && i.text.length < 48);
   return (concise ?? plain[plain.length - 1])?.text ?? null;
@@ -152,6 +211,16 @@ export function LiveBuildTimeline({
       if (step.id === "gap_analysis") {
         return (artifacts?.gap_analysis?.fields.length ?? 0) > 0;
       }
+      if (step.id === "enrichment") {
+        const detail = artifacts?.stage_details?.enrichment;
+        return !!detail && (
+          (detail.gap_analysis?.fields.length ?? 0) > 0 ||
+          (detail.web_research?.web_finding_count ?? 0) > 0 ||
+          (detail.freshness?.freshness_result_count ?? 0) > 0 ||
+          (detail.external_sources?.validated_count ?? 0) > 0 ||
+          (detail.external_sources?.unused_count ?? 0) > 0
+        );
+      }
       if (step.id === "external_sources") {
         const e = artifacts?.external_search;
         return (
@@ -165,11 +234,11 @@ export function LiveBuildTimeline({
       }
       return step.items.some(isBlockItem);
     };
+    const running = list.find((s) => s.status === "running");
+    if (running) return running.id;
     for (let i = list.length - 1; i >= 0; i -= 1) {
       if (hasDetail(list[i])) return list[i].id;
     }
-    const running = list.find((s) => s.status === "running");
-    if (running) return running.id;
     for (let i = list.length - 1; i >= 0; i -= 1) {
       if (TERMINAL_STEP_STATUSES.has(list[i].status)) return list[i].id;
     }
@@ -225,6 +294,76 @@ export function LiveBuildTimeline({
                   </span>
                 );
               })}
+            </div>
+          ) : null}
+        </div>
+      );
+    }
+
+    // External + governed search: validated anchors + found/no-evidence counts.
+    if (step.id === "enrichment" && artifacts?.stage_details?.enrichment) {
+      const detail = artifacts.stage_details.enrichment;
+      const web = detail.web_research;
+      const freshness = detail.freshness;
+      const external = detail.external_sources;
+      return (
+        <div className="space-y-2 text-xs text-slate-600">
+          {web ? (
+            <div className="rounded-md border border-slate-200 bg-white p-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-semibold text-slate-700">Web research</span>
+                <span title="How many related search groups the web-research stage ran.">
+                  {web.search_batch_count} batches
+                </span>
+                <span title="How many searches the planner prepared before execution.">
+                  {web.planned_search_query_count} planned searches
+                </span>
+                <span title="How many web-search requests actually ran for this step.">
+                  {web.actual_serper_call_count} searches
+                </span>
+                <span title="Web findings captured for possible enrichment.">
+                  {web.web_finding_count} findings
+                </span>
+              </div>
+              {web.findings.length > 0 ? (
+                <div className="mt-1.5 space-y-1">
+                  {web.findings.slice(0, 3).map((finding, i) => (
+                    <WebFindingPreview
+                      key={`${finding.city ?? "city"}-${finding.field ?? "field"}-${i}`}
+                      finding={finding}
+                    />
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          {freshness ? (
+            <div className="rounded-md border border-slate-200 bg-white p-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-semibold text-slate-700">Freshness</span>
+                <span title="Checks comparing captured web values against the current CCC values.">
+                  {freshness.freshness_result_count} comparisons
+                </span>
+                {Object.entries(freshness.classification_counts).map(([name, count]) => (
+                  <span
+                    key={name}
+                    title={describeFreshnessClassification(name)}
+                    className="rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px]"
+                  >
+                    {count} {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null}
+          {external ? (
+            <div className="rounded-md border border-slate-200 bg-white p-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-semibold text-slate-700">External sources</span>
+                <span>{external.validated_count} validated</span>
+                <span>{external.unused_count} found not validated</span>
+                <span>{external.no_evidence_count} no evidence</span>
+              </div>
             </div>
           ) : null}
         </div>
@@ -343,9 +482,10 @@ export function LiveBuildTimeline({
       {steps && steps.length > 0 ? (
         <div className="space-y-1">
           {steps.map((step) => {
-            const summary = stepSummaryLine(step);
+            const summary = stepSummaryLine(step, artifacts);
             const isActive = step.status === "running";
             const isFocus = step.id === focusStepId;
+            const isMuted = step.status === "skipped" || step.status === "disabled" || step.status === "pending";
             return (
               <div key={step.id} className="relative pl-6">
                 <div className="absolute left-[7px] top-0 h-full w-px bg-slate-200" />
@@ -357,7 +497,7 @@ export function LiveBuildTimeline({
                     className={`shrink-0 whitespace-nowrap text-sm font-medium ${
                       isActive
                         ? "text-amber-800"
-                        : step.status === "skipped"
+                        : isMuted
                           ? "text-slate-400"
                           : "text-slate-800"
                     }`}

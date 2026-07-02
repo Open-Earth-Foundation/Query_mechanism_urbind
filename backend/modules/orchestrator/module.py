@@ -42,6 +42,11 @@ from backend.services.run_logger import RunLogger
 from backend.utils.config import AppConfig, get_openrouter_api_key
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
 from backend.utils.paths import RunPaths, build_run_id, create_run_paths
+from backend.utils.planned_stages import (
+    PLANNED_STAGES_ALIAS,
+    PLANNED_STAGES_FILENAME,
+    build_planned_stages_payload,
+)
 from backend.utils.run_snapshot import (
     build_code_snapshot,
     build_config_snapshot,
@@ -252,6 +257,7 @@ def _write_input_snapshots(
     config_snapshot = build_config_snapshot(config, config_path)
     vector_store_snapshot = build_vector_store_snapshot(config)
     documents_snapshot = build_documents_snapshot(config.markdown_dir, selected_cities)
+    planned_stages_payload = build_planned_stages_payload(config)
 
     execution_path = run_logger.write_stage_file(
         "input_snapshot",
@@ -282,6 +288,12 @@ def _write_input_snapshots(
         "documents_snapshot.json",
         documents_snapshot,
         alias="documents_snapshot",
+    )
+    planned_stages_path = run_logger.write_stage_file(
+        "input_snapshot",
+        PLANNED_STAGES_FILENAME,
+        planned_stages_payload,
+        alias=PLANNED_STAGES_ALIAS,
     )
 
     snapshot_summary: dict[str, object] = {
@@ -320,6 +332,7 @@ def _write_input_snapshots(
         "config_snapshot": run_logger.artifact_label(config_snapshot_path),
         "vector_store_snapshot": run_logger.artifact_label(vector_store_path),
         "documents_snapshot": run_logger.artifact_label(documents_path),
+        PLANNED_STAGES_ALIAS: run_logger.artifact_label(planned_stages_path),
     }
     run_logger.write_input_snapshot_stage(
         snapshot_summary=snapshot_summary,

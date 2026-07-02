@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -98,6 +98,11 @@ class PipelineStep(BaseModel):
     id: str
     label: str
     status: str
+    stage_name: str | None = None
+    stage_number: int | None = None
+    planned_order: int | None = None
+    enabled: bool | None = None
+    artifact_aliases: list[str] = Field(default_factory=list)
     started_at: str | None = None
     completed_at: str | None = None
     items: list[PipelineStepItem] = Field(default_factory=list)
@@ -330,6 +335,7 @@ class RunArtifactsResponse(BaseModel):
     enrichment_steps: list[EnrichmentStep] = Field(default_factory=list)
     gap_analysis: GapAnalysisDetail | None = None
     external_search: ExternalSearchDetail | None = None
+    stage_details: dict[str, Any] = Field(default_factory=dict)
     # Per-artifact read outcome ("ok" / "missing" / "unreadable") so consumers
     # can tell "no data" apart from "artifact bundle could not be read".
     artifact_health: dict[str, str] = Field(default_factory=dict)

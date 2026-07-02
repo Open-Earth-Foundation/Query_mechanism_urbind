@@ -91,9 +91,11 @@ enrichment:
   # Two-phase gap analyst: decompose fields first, then detect per-city gaps.
   # Governed external Markdown search runs after per-city gaps are known.
   use_split_gap_flow: true
-  # Search worker checks the curated tier-1 web allowlist (site:domain) before
-  # falling through to open Serper.
-  tier1_first_search: true
+  # Search worker can check the curated tier-1 web allowlist (site:domain)
+  # before falling through to open Serper. Keep disabled by default for now:
+  # it usually improves source quality, but it multiplies Serper calls by the
+  # number of matching tier-1 sources and still often needs an open-web pass.
+  tier1_first_search: false
   tier1_confidence_threshold: 0.6
   max_workers: 6
   max_queries_per_batch: 25

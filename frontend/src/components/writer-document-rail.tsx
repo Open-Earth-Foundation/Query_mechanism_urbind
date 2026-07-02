@@ -7,6 +7,7 @@ import { MarkdownWithReferences } from "@/components/markdown-with-references";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { reportContentForDisplay } from "@/lib/report-content";
 
 interface WriterDocumentRailProps {
   runId: string;
@@ -25,6 +26,8 @@ export function WriterDocumentRail({
   showWriterContextExport = false,
   onOpenFullDocument,
 }: WriterDocumentRailProps) {
+  const displayContent = reportContentForDisplay(content, question);
+
   return (
     <div className="space-y-4">
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
@@ -61,7 +64,7 @@ export function WriterDocumentRail({
 
       <ScrollArea className="h-[62vh] rounded-xl border border-slate-200 bg-white">
         <article className="document-markdown document-markdown-rail p-4">
-          <MarkdownWithReferences content={content} runId={runId} />
+          <MarkdownWithReferences content={displayContent} runId={runId} />
         </article>
       </ScrollArea>
     </div>

@@ -52,6 +52,7 @@ import {
   persistFrontendMode,
   readStoredFrontendMode,
 } from "@/lib/frontend-mode";
+import { reportContentForDisplay } from "@/lib/report-content";
 import { formatCityLabel } from "@/lib/utils";
 import {
   CityGroup,
@@ -260,6 +261,10 @@ export default function Home() {
     );
   }, [availableRuns, knownRunsById, selectedExistingRunId]);
   const documentQuestion = selectedExistingRunSummary?.question.trim() || question.trim();
+  const displayRunOutputContent =
+    runOutput?.content && documentQuestion
+      ? reportContentForDisplay(runOutput.content, documentQuestion)
+      : runOutput?.content;
 
   const runContextCityNames = useMemo(
     () => extractRunContextCityNames(runContext),
@@ -1481,7 +1486,7 @@ export default function Home() {
                       />
                       <article className="document-markdown rounded-md border border-slate-200 bg-white p-5 shadow-inner">
                         <PromptBlock prompt={documentQuestion} />
-                        <MarkdownWithReferences content={runOutput.content} runId={runId} />
+                        <MarkdownWithReferences content={displayRunOutputContent ?? ""} runId={runId} />
                       </article>
                       {runContext ? (
                         <p className="text-xs text-slate-500">

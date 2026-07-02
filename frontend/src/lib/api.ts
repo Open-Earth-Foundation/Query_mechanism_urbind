@@ -83,6 +83,11 @@ export interface PipelineStep {
   id: string;
   label: string;
   status: string;
+  stage_name?: string | null;
+  stage_number?: number | null;
+  planned_order?: number | null;
+  enabled?: boolean | null;
+  artifact_aliases?: string[] | null;
   started_at?: string | null;
   completed_at?: string | null;
   items: PipelineStepItem[];
@@ -200,6 +205,80 @@ export interface ExternalSearchDetail {
   no_evidence: NoEvidenceItem[];
 }
 
+export interface WebResearchFindingPreview {
+  city?: string | null;
+  field?: string | null;
+  value?: number | string | null;
+  unit?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  source_tier?: string | null;
+}
+
+export interface FreshnessResultPreview {
+  city?: string | null;
+  field?: string | null;
+  ccc_value?: number | string | null;
+  web_value?: number | string | null;
+  classification?: string | null;
+  reason?: string | null;
+  web_source_url?: string | null;
+}
+
+export interface EnrichmentStageDetail {
+  gap_analysis?: GapAnalysisDetail | null;
+  external_sources?: {
+    executed: boolean;
+    validated_count: number;
+    resolution_count: number;
+    unused_count: number;
+    no_evidence_count: number;
+    validated: ExternalEvidenceItem[];
+    unused: ExternalCandidateItem[];
+    no_evidence: NoEvidenceItem[];
+  } | null;
+  web_research?: {
+    executed: boolean;
+    search_batch_count: number;
+    search_query_count: number;
+    planned_search_query_count: number;
+    actual_serper_call_count: number;
+    successful_serper_call_count: number;
+    tier1_site_call_count: number;
+    open_call_count: number;
+    skipped_open_call_count: number;
+    estimated_max_serper_call_count: number;
+    web_finding_count: number;
+    national_finding_count: number;
+    comparative_finding_count: number;
+    tier1_finding_count: number;
+    open_finding_count: number;
+    findings: WebResearchFindingPreview[];
+    national_findings: WebResearchFindingPreview[];
+    comparative_findings: WebResearchFindingPreview[];
+  } | null;
+  freshness?: {
+    executed: boolean;
+    freshness_result_count: number;
+    classification_counts: Record<string, number>;
+    results: FreshnessResultPreview[];
+  } | null;
+}
+
+export interface AssumptionsStageDetail {
+  executed: boolean;
+  assumption_count: number;
+  non_estimable_count: number;
+  reason_breakdown: Record<string, number>;
+  assumptions: Record<string, unknown>[];
+  non_estimable: Record<string, unknown>[];
+}
+
+export interface StageDetails {
+  enrichment?: EnrichmentStageDetail | null;
+  assumptions?: AssumptionsStageDetail | null;
+}
+
 export interface RunArtifactsResponse {
   run_id: string;
   status: RunStatus;
@@ -208,6 +287,7 @@ export interface RunArtifactsResponse {
   enrichment_steps: EnrichmentStep[];
   gap_analysis?: GapAnalysisDetail | null;
   external_search?: ExternalSearchDetail | null;
+  stage_details?: StageDetails | null;
   // Per-artifact read outcome ("ok" / "missing" / "unreadable").
   artifact_health?: Record<string, string> | null;
   // True when an artifact existed but could not be parsed (a read regression).

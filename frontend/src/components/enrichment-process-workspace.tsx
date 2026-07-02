@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { type ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import {
   AlertTriangle,
   ArrowLeft,
@@ -49,16 +49,33 @@ function humanizeReasonCode(code: string): string {
   return code.replace(/_/g, " ");
 }
 
-function WarnBadge({ text }: { text: string }) {
+function HintChip({
+  title,
+  className,
+  children,
+}: {
+  title: string;
+  className: string;
+  children: ReactNode;
+}) {
   return (
-    <span
-      className="inline-flex items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700"
-      title={text}
-    >
-      <AlertTriangle className="h-3 w-3" />
-      Break
+    <span className={`${className} cursor-help`} title={title}>
+      {children}
     </span>
   );
+}
+
+function describeFreshnessClassification(name: string): string {
+  switch (name.toLowerCase()) {
+    case "consistent":
+      return "The web evidence matches the current CCC value closely enough that no freshness warning was raised.";
+    case "superseded":
+      return "The web evidence suggests the CCC value is outdated or has likely been replaced by a newer figure.";
+    case "uncertain":
+      return "The web evidence was not strong or consistent enough to confidently confirm whether the CCC value is still current.";
+    default:
+      return `Freshness review classified this comparison as ${name.replace(/_/g, " ")}.`;
+  }
 }
 
 export function EnrichmentProcessWorkspace({
@@ -96,7 +113,7 @@ export function EnrichmentProcessWorkspace({
     return () => controller.abort();
   }, [load]);
 
-  // Default: open the Assumptions detail and any step that broke.
+  // Default: open the Assumptions detail and any step that carries a warning.
   useEffect(() => {
     if (!data) return;
     const next: Record<string, boolean> = {};
@@ -218,12 +235,18 @@ export function EnrichmentProcessWorkspace({
     }
 
     if (step.key === "external_web") {
+      const enrichmentDetail = data?.stage_details?.enrichment;
+      const webResearch = enrichmentDetail?.web_research;
+      const freshness = enrichmentDetail?.freshness;
+      const externalSources = enrichmentDetail?.external_sources;
       const detail = data?.external_search;
-      const validated = detail?.validated ?? [];
-      const unused = detail?.unused ?? [];
-      const noEvidence = detail?.no_evidence ?? [];
-      const unusedTotal = detail?.unused_total ?? unused.length;
+      const validated = externalSources?.validated ?? detail?.validated ?? [];
+      const unused = externalSources?.unused ?? detail?.unused ?? [];
+      const noEvidence = externalSources?.no_evidence ?? detail?.no_evidence ?? [];
+      const unusedTotal = externalSources?.unused_count ?? detail?.unused_total ?? unused.length;
       const shownUnused = showAllUnused ? unused : unused.slice(0, UNUSED_PREVIEW_COUNT);
+      const webExecuted = Boolean(webResearch?.executed);
+      const externalExecuted = Boolean(externalSources?.executed);
       return (
         <div className="space-y-4 text-sm text-slate-600">
           {step.warn ? (
@@ -234,6 +257,112 @@ export function EnrichmentProcessWorkspace({
                   still estimate from peer/national data, so we don't claim the
                   whole chain failed here. */}
               <p>{step.warn}</p>
+            </div>
+          ) : null}
+
+          {webResearch ? (
+            <div className="space-y-2 rounded-md border border-slate-200 bg-white p-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Web research
+                </p>
+                <HintChip
+                  title="How many related search groups the web-research stage ran."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {webResearch.search_batch_count} batches
+                </HintChip>
+                <HintChip
+                  title="How many searches the planner prepared before execution."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {webResearch.planned_search_query_count} planned searches
+                </HintChip>
+                <HintChip
+                  title="How many web-search requests actually ran for this step."
+                  className="rounded-full bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-sky-700"
+                >
+                  {webResearch.actual_serper_call_count} searches
+                </HintChip>
+                <HintChip
+                  title="Searches limited to the curated tier-1 source list."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {webResearch.tier1_site_call_count} tier-1
+                </HintChip>
+                <HintChip
+                  title="Broader web searches outside the curated tier-1 source list."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {webResearch.open_call_count} open-web
+                </HintChip>
+                <HintChip
+                  title="Web findings captured for possible enrichment."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {webResearch.web_finding_count} findings
+                </HintChip>
+              </div>
+              {webResearch.findings.length > 0 ? (
+                <div className="space-y-1.5">
+                  {webResearch.findings.slice(0, 5).map((finding, i) => (
+                    <div
+                      key={`${finding.city ?? "city"}-${finding.field ?? "field"}-${i}`}
+                      className="flex flex-wrap items-center gap-1.5 text-xs"
+                    >
+                      <span className="font-medium text-slate-700">
+                        {finding.city ? formatCityLabel(finding.city) : "Unknown city"} ·{" "}
+                        {finding.field ? humanizeField(finding.field) : "unknown field"}
+                      </span>
+                      {finding.value !== undefined && finding.value !== null ? (
+                        <span className="rounded bg-slate-100 px-1.5 py-0.5 text-slate-700">
+                          {finding.value}
+                          {finding.unit ? ` ${finding.unit}` : ""}
+                        </span>
+                      ) : null}
+                      {finding.source_url ? (
+                        <a
+                          href={finding.source_url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="truncate text-sky-700 hover:underline"
+                        >
+                          {finding.source_tier === "tier1" ? "tier-1 source" : "web source"}
+                        </a>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              ) : webExecuted ? (
+                <p className="text-xs text-slate-500">Web research ran, but no findings were captured.</p>
+              ) : (
+                <p className="text-xs text-slate-500">No web research artifact is available for this run.</p>
+              )}
+            </div>
+          ) : null}
+
+          {freshness ? (
+            <div className="space-y-2 rounded-md border border-slate-200 bg-white p-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                  Freshness review
+                </p>
+                <HintChip
+                  title="Checks comparing captured web values against the current CCC values."
+                  className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                >
+                  {freshness.freshness_result_count} comparisons
+                </HintChip>
+                {Object.entries(freshness.classification_counts).map(([name, count]) => (
+                  <HintChip
+                    key={name}
+                    title={describeFreshnessClassification(name)}
+                    className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600"
+                  >
+                    {count} {name}
+                  </HintChip>
+                ))}
+              </div>
             </div>
           ) : null}
 
@@ -320,7 +449,11 @@ export function EnrichmentProcessWorkspace({
 
           {validated.length === 0 && unused.length === 0 && noEvidence.length === 0 ? (
             <p className="text-xs text-slate-500">
-              No external or web search ran for this run.
+              {webExecuted
+                ? externalExecuted
+                  ? "Web research ran, but no governed external claims were validated."
+                  : "Web research ran; no governed external-source validation artifact is available for this run."
+                : "No external-source validation or web research artifact is available for this run."}
             </p>
           ) : null}
         </div>
@@ -495,7 +628,6 @@ export function EnrichmentProcessWorkspace({
                   <span className="text-sm font-semibold text-slate-800">{step.label}</span>
                   <span className="ml-2 text-xs text-slate-500">{step.summary}</span>
                 </span>
-                {step.warn ? <WarnBadge text={step.warn} /> : null}
                 <ChevronDown
                   className={`h-4 w-4 shrink-0 text-slate-400 transition-transform ${open ? "rotate-180" : ""}`}
                 />

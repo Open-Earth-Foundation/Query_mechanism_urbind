@@ -6,6 +6,7 @@ import json
 from typing import Any
 from unittest.mock import MagicMock, patch
 
+import httpx
 import pytest
 
 from backend.modules.web_researcher.deep_diver import (
@@ -96,6 +97,7 @@ class TestSerperSearchClient:
             assert results[0].title == "Test"
             assert results[0].url == "https://example.com"
             assert client.query_count == 1
+            assert client.successful_query_count == 1
 
 
 # ---------------------------------------------------------------------------
@@ -135,6 +137,39 @@ class TestFirecrawlScraper:
             assert result.success is True
             assert len(result.content) < 200  # truncated + notice
             assert "[...content truncated...]" in result.content
+
+    def test_timeout_records_structured_failure(self) -> None:
+        scraper = FirecrawlScraper(api_key="key")
+
+        with patch("backend.modules.web_researcher.scraper.httpx.Client") as mock_httpx:
+            mock_httpx_instance = MagicMock()
+            mock_httpx_instance.__enter__ = MagicMock(return_value=mock_httpx_instance)
+            mock_httpx_instance.__exit__ = MagicMock(return_value=False)
+            mock_httpx_instance.post.side_effect = httpx.ReadTimeout(
+                "The read operation timed out"
+            )
+            mock_httpx.return_value = mock_httpx_instance
+
+            result = scraper.scrape(
+                "https://www.researchgate.net/publication/test",
+                query="Aachen geothermal permit",
+                batch_id="batch_001",
+            )
+
+        assert result.success is False
+        failures = scraper.scrape_failures
+        assert failures == [
+            {
+                "url": "https://www.researchgate.net/publication/test",
+                "domain": "www.researchgate.net",
+                "provider": "firecrawl",
+                "batch_id": "batch_001",
+                "query": "Aachen geothermal permit",
+                "error_type": "ReadTimeout",
+                "error": "The read operation timed out",
+                "severity": "warning",
+            }
+        ]
 
 
 # ---------------------------------------------------------------------------

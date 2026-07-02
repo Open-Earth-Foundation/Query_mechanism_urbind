@@ -27,6 +27,7 @@ import logging
 from pathlib import Path
 
 from backend.modules.vector_store.indexer import update_markdown_index
+from backend.modules.vector_store.update_lock import VectorStoreUpdateLockError
 from backend.modules.vector_store.update_status import (
     get_update_status_path,
     now_iso,
@@ -75,6 +76,17 @@ def main() -> None:
             selected_cities=None,
             dry_run=False,
         )
+    except VectorStoreUpdateLockError as exc:
+        write_update_status(
+            status_path,
+            status="running",
+            trigger=args.trigger,
+            update_mode=config.vector_store.update_mode,
+            message=str(exc),
+            started_at=started_at,
+        )
+        logger.warning("Vector store update skipped because another process holds the lock: %s", exc)
+        raise
     except Exception as exc:
         logger.exception("Vector store update failed")
         write_update_status(
