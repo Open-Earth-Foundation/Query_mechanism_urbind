@@ -48,6 +48,10 @@ Runtime controls:
 - `MLFLOW_ENABLED=false`
 - `MLFLOW_TRACKING_URI`
 - `MLFLOW_EXPERIMENT_NAME=URBIND`
+- `MLFLOW_ENVIRONMENT`
+- `MLFLOW_ARTIFACT_PATH=run_artifacts`
+- `MLFLOW_TRACE_MODE=consolidated`
+- `MLFLOW_FAIL_ON_ERROR=false`
 
 ## Download Artifacts From MLflow
 
@@ -69,10 +73,6 @@ The script is hardcoded to:
 Artifacts are written to `output/remote_artifact_downloads/<RUN_ID>/` unless
 `DEST_DIR` is set.
 The run must belong to the URBIND experiment or the script exits with an error.
-- `MLFLOW_ENVIRONMENT`
-- `MLFLOW_ARTIFACT_PATH=run_artifacts`
-- `MLFLOW_TRACE_MODE=consolidated`
-- `MLFLOW_FAIL_ON_ERROR=false`
 
 MLflow failures are best-effort warnings by default. Set `MLFLOW_FAIL_ON_ERROR=true` only when pipeline success should depend on MLflow upload/tracing success.
 

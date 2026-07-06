@@ -6,10 +6,11 @@ Enrichment starts after CCC markdown extraction. It tries to understand missing 
 
 The enrichment phase currently contains:
 
-1. [Gap Analysis](gap-analysis.md)
-2. [External Sources](external-sources.md)
-3. [Web Research](web-research.md)
-4. [Assumptions](assumptions.md)
+1. [Gap Analysis](06_gap-analysis.md)
+2. [External Sources](07_external-sources.md)
+3. [Web Research](08_web-research.md)
+
+After evidence is merged, see [Enrichment Context Handoff](09_enrichment-context-handoff.md), then [Assumptions](10_assumptions.md) and [Assumptions Context Handoff](11_assumptions-context-handoff.md).
 
 These steps share models under `backend/modules/web_researcher/`, and the main persisted output is `stage_files/008_enrichment/enrichment_bundle.json`.
 
@@ -32,7 +33,8 @@ flowchart TD
     K --> M[Compute enriched fields]
     L --> M
     M --> N[enrichment_bundle.json]
-    N --> O[Assumptions estimator]
+    N --> O[Enrichment context handoff]
+    O --> P[Assumptions estimator]
 ```
 
 ## Context Bundle Effect

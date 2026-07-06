@@ -1,5 +1,15 @@
 # Data Pipeline Modularization Assessment
 
+> [!NOTE]
+> This is a thought document and architecture assessment, not the current
+> pipeline onboarding guide. It evaluates whether the source-to-evidence
+> pipeline should be physically split into separate modules.
+>
+> Result: do not prioritize a large module reorganization now. Keep the shared
+> runtime centralized, document the stage boundaries clearly, harden the weakest
+> contracts and artifacts, and revisit physical extraction only if reuse,
+> ownership, or debugging pressure makes the added maintenance cost worthwhile.
+
 ## Purpose
 
 This document evaluates whether the repository should prioritize a full
@@ -95,9 +105,10 @@ Findings that still hold:
   fixture.
 - Web search/process/extract is functionally separated across files, but not
   physically separated from the enrichment package. It has good logging and
-  typed outputs, but weak artifacting. Search plans, raw search results,
-  scrape decisions, and extraction attempts are not persisted as first-class
-  run artifacts.
+  typed outputs. Its artifacting has improved through
+  `web_research_audit.json`, scrape-warning summaries, and search execution
+  metrics, but it still lacks a dedicated web-search benchmark and full raw
+  search/extraction replay artifacts.
 - Assumptions are split into two concepts: automatic enrichment estimates in
   `backend/modules/web_researcher/assumptions_estimator.py` and post-run
   editable assumptions in `backend/api/services/assumptions_review.py`. Both
@@ -184,7 +195,7 @@ project to duplicate or abstract the shared layer in awkward ways.
 
 | Stage | Current code home | Contract quality | Logging | Artifacts | Benchmarks | Assessment for now |
 | --- | --- | --- | --- | --- | --- | --- |
-| Read/process/extract CCC data | `backend/modules/markdown_researcher/`, `backend/modules/vector_store/`, orchestrator glue | Partial to strong. `MarkdownResearchResult`, `MarkdownExcerpt`, chunk dicts, and retrieval artifact shape are defined, but chunk inputs are still plain dicts. | Strong enough. Uses module loggers, run log, run summary, progress tracker. | Strong. `markdown/*.json`, `context_bundle.json`, `run.json`, `run.log`, `run_summary.txt`. | Strongest of all stages. Retrieval benchmark, recall benchmark, chunking benchmark, unit tests. | Mature enough behaviorally. Better naming and contracts would help, but a package move is not the best first step. |
+| Read/process/extract CCC data | `backend/modules/markdown_researcher/`, `backend/modules/vector_store/`, orchestrator glue | Partial to strong. `MarkdownResearchResult`, `MarkdownExcerpt`, chunk dicts, and retrieval artifact shape are defined, but chunk inputs are still plain dicts. | Strong enough. Uses module loggers, run log, run summary, progress tracker. | Strong. `stage_files/003_retrieval/`, `stage_files/005_markdown_batching/`, `stage_files/006_markdown_extraction/`, `context_bundle.json`, `api_state.json`, `run.log`, `run_summary.txt`. | Strongest of all stages. Retrieval benchmark, recall benchmark, chunking benchmark, unit tests. | Mature enough behaviorally. Better naming and contracts would help, but a package move is not the best first step. |
 | Read/process/extract 3rd party data | `documents/source_library/`, `backend/modules/web_researcher/external_sources.py`, `external_agent.py`, `external_resolver.py` | Strong. `SourceMetadata`, `SearchHit`, `EvidenceCandidate`, `ExternalEvidenceClaim`, `ExternalEvidenceResolution`, `NoEvidenceRecord`. | Good. Tool calls and agent failures are logged. | Medium to strong. `stage_files/008_enrichment/external_source_search_audit.json` keeps the search trace, while accepted external outputs live in the canonical enrichment bundle. | Medium. Dedicated Krakow external-source benchmark with 4 cases plus unit tests. | Good candidate for future extraction, but the current need is better artifact registration and documentation of boundaries. |
 | Search/process/extract web data | `backend/modules/web_researcher/search_planner.py`, `search_worker.py`, `search.py`, `scraper.py`, `extractor.py`, `freshness.py`, `tier1_web.py` | Medium. `SearchBatch`, `WebFinding`, `FreshnessResult`, and tier-1 models exist. | Good. Search, scrape, relevance, tier-1, worker, and freshness paths log. | Medium. Canonical web/freshness outputs live in `stage_files/008_enrichment/enrichment_bundle.json`; `web_research_audit.json` includes non-bundle trace data, structured scrape warnings, and search execution summaries for tier-1/open query volume. | Weak. Unit tests exist, but no dedicated live websearch benchmark. | The main problem is not folder placement. It is missing benchmark discipline and deeper extraction observability. Fix those before considering a module split. |
 | Generate/review/apply assumptions | `backend/modules/web_researcher/assumptions_estimator.py`, `backend/api/services/assumptions_review.py`, `backend/api/routes/assumptions.py` | Medium. Automatic assumptions use `AssumptionRecord` and `NonEstimableRecord`; review flow uses API models `MissingDataItem`, `AssumptionsPayload`, `RegenerationResult`. | Medium. Service and estimator log key LLM calls and skip/failure paths. | Medium. Automatic assumptions are persisted through enrichment artifacts; review artifacts persist only with `persist_artifacts=true`. | Weak. Unit/API tests exist, but no assumptions benchmark. | The bigger issue is contract fragmentation, not folder count. Unify the writer-facing contract before restructuring code homes. |
@@ -243,7 +254,7 @@ Artifacts already written:
 - `stage_files/006_markdown_extraction/decision_audit.json`
 - `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled
 - `context_bundle.json`
-- `run.json`
+- `api_state.json`
 - `run.log`
 - `run_summary.txt`
 
@@ -512,12 +523,14 @@ Tests already present:
 
 - Web search/process/extract is not a separate module. It is one slice of
   `web_researcher`, which also contains external-source and assumptions logic.
-- Search plans are not persisted as first-class artifacts. If websearch finds
-  the wrong thing, there is no standard `web_search/search_plan.json`.
-- Raw Serper results are not persisted.
-- Scrape attempts, skipped URLs, relevance decisions, extraction attempts,
-  validation rejections, and deep-dive page selection are not persisted as
-  structured artifacts.
+- Search plans and execution summaries are persisted inside
+  `stage_files/008_enrichment/web_research_audit.json`, but there is no
+  separate web-search artifact tree such as `web_search/search_plan.json`.
+- Raw Serper response payloads are not persisted for exact replay.
+- Scrape warnings and aggregate scrape counts are persisted in the audit
+  artifact, but skipped URLs, relevance decisions, extraction attempts,
+  validation rejections, and deep-dive page selection are still not persisted
+  as full replayable artifacts.
 - There is no dedicated websearch benchmark equivalent to the external-source
   benchmark.
 - `tier1_web.py` has `api` access entries, but the current worker uses them as
@@ -596,10 +609,13 @@ There are two related but separate assumptions workflows:
 
 Post-run assumptions artifacts when persistence is enabled:
 
-- `stage_files/assumptions/discovered.json`
-- `stage_files/assumptions/edited.json`
-- `stage_files/assumptions/revised_context_bundle.json`
-- `stage_files/assumptions/final_with_assumptions.md`
+- `stage_files/010_assumptions/discovered.json`
+- `stage_files/010_assumptions/edited.json`
+- `stage_files/010_assumptions/revised_context_bundle.json`
+- `stage_files/010_assumptions/final_with_assumptions.md`
+
+The review/apply flows also write stage detail records for
+`101_assumptions_discovery` and `102_assumptions_apply`.
 
 Tests already present:
 
@@ -660,7 +676,7 @@ surface that would have to remain coherent.
 | Shared component | Current owner | Shared by | What it carries or creates | Why it matters to the recommendation |
 | --- | --- | --- | --- | --- |
 | `AppConfig` and `llm_config.yaml` | `backend/utils/config.py` | Orchestrator, CCC reader, vector store, external sources, websearch, assumptions, writer, benchmarks | Models, token budgets, feature flags, source dirs, websearch toggles, vector settings | Centralization is useful today. Splitting modules does not remove the need to keep this aligned. |
-| `RunPaths` | `backend/utils/paths.py` | Orchestrator, run logger, API services, tests | Canonical per-run paths for `run.json`, `context_bundle.json`, `markdown/*`, `final.md` | A reorg still needs one shared artifact path contract. |
+| `RunPaths` | `backend/utils/paths.py` | Orchestrator, run logger, API services, tests | Canonical per-run paths for `api_state.json`, `context_bundle.json`, `stage_files/`, `stages/`, `final.md` | A reorg still needs one shared artifact path contract. |
 | `RunLogger` | `backend/services/run_logger.py` | Orchestrator, enrichment serializer, API diagnostics | Structured run log, context bundle, artifact registry, run summary, LLM usage summary | Logging and artifact registration are part of the operational surface that would need coordinated changes. |
 | `context_bundle` | Runtime dict built by `RunLogger` and modules | CCC, external sources, websearch, assumptions, writer, API, benchmarks | Cross-stage payload with `markdown`, `enrichment`, final output path, queries, selected cities | This is the biggest implicit contract in the system. Documenting it clearly is more urgent than moving files. |
 | Enrichment Pydantic models | `backend/modules/web_researcher/models.py` | Gap analysis, external sources, websearch, freshness, assumptions, writer tests | `GapManifest`, `WebFinding`, `ExternalEvidenceClaim`, `EnrichedField`, `AssumptionRecord`, and related models | The modeling is useful, but it is still a shared seam. A split without a careful contract plan creates drift risk. |
@@ -721,8 +737,9 @@ surface that would have to remain coherent.
   reproducible benchmarking.
 - Assumptions are split between enrichment and API review with different
   shapes.
-- External-source tool-call audit artifacts are not treated as first-class run
-  artifacts in the normal pipeline.
+- External-source tool-call audit artifacts are now normal enrichment-stage
+  artifacts, but benchmark breadth and source-handoff documentation still need
+  work.
 - Web search/process/extract and assumptions do not yet have dedicated
   benchmark harnesses.
 
