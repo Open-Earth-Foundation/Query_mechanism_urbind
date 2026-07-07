@@ -71,6 +71,7 @@ def _load_vector_store_chunks(
         store = ChromaStore(
             persist_path=config.vector_store.chroma_persist_path,
             collection_name=config.vector_store.chroma_collection_name,
+            distance_metric=config.vector_store.distance_metric,
         )
         payload = store.get(ids=chunk_ids, limit=max(len(chunk_ids), 1))
     except Exception as exc:  # noqa: BLE001

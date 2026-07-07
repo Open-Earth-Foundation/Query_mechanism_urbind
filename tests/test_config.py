@@ -179,6 +179,8 @@ def test_load_config_reads_vector_store_settings_from_yaml(tmp_path: Path) -> No
         [
             "vector_store:",
             "  embedding_model: custom-embedding-model",
+            "  embedding_base_url: https://openrouter.ai/api/v1",
+            "  embedding_api_key_env: OPENROUTER_API_KEY",
             "  retrieval_max_distance: 0.75",
             "  retrieval_max_chunks_per_city_query: 42",
         ],
@@ -187,8 +189,54 @@ def test_load_config_reads_vector_store_settings_from_yaml(tmp_path: Path) -> No
     config = load_config(config_path)
 
     assert config.vector_store.embedding_model == "custom-embedding-model"
+    assert config.vector_store.embedding_base_url == "https://openrouter.ai/api/v1"
+    assert config.vector_store.embedding_api_key_env == "OPENROUTER_API_KEY"
     assert config.vector_store.retrieval_max_distance == 0.75
     assert config.vector_store.retrieval_max_chunks_per_city_query == 42
+
+
+def test_load_config_applies_vector_store_embedding_env_overrides(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    """Vector-store embedding provider settings can be overridden by env vars."""
+    config_path = _write_config(tmp_path, [])
+    monkeypatch.setenv("VECTOR_STORE_EMBEDDING_BASE_URL", "https://openrouter.ai/api/v1")
+    monkeypatch.setenv("VECTOR_STORE_EMBEDDING_API_KEY_ENV", "OPENROUTER_API_KEY")
+
+    config = load_config(config_path)
+
+    assert config.vector_store.embedding_base_url == "https://openrouter.ai/api/v1"
+    assert config.vector_store.embedding_api_key_env == "OPENROUTER_API_KEY"
+
+
+def test_load_config_reads_vector_store_distance_metric_from_yaml(tmp_path: Path) -> None:
+    """Vector-store distance metric is loaded from llm_config.yaml."""
+    config_path = _write_config(
+        tmp_path,
+        [
+            "vector_store:",
+            "  distance_metric: cosine",
+        ],
+    )
+
+    config = load_config(config_path)
+
+    assert config.vector_store.distance_metric == "cosine"
+
+
+def test_load_config_rejects_invalid_vector_store_distance_metric(tmp_path: Path) -> None:
+    """Unsupported vector-store distance metrics are rejected at config load."""
+    config_path = _write_config(
+        tmp_path,
+        [
+            "vector_store:",
+            "  distance_metric: manhattan",
+        ],
+    )
+
+    with pytest.raises(ValidationError):
+        load_config(config_path)
 
 
 def test_load_config_applies_vector_store_auto_update_env_override(

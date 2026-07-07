@@ -32,7 +32,7 @@ from backend.utils.retry import RetrySettings, call_with_retries
 from backend.utils.tokenization import chunk_text, count_tokens
 
 logger = logging.getLogger(__name__)
-INDEX_SETTINGS_VERSION = 1
+INDEX_SETTINGS_VERSION = 2
 
 
 @dataclass(frozen=True)
@@ -64,21 +64,29 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         self,
         model: str,
         base_url: str | None = None,
+        api_key_env: str | None = None,
         batch_size: int = 100,
         max_retries: int = 3,
         retry_base_seconds: float = 0.8,
         retry_max_seconds: float = 8.0,
         max_input_tokens: int | None = 8000,
     ) -> None:
-        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
-        if not api_key:
-            raise EnvironmentError("OPENAI_API_KEY or OPENROUTER_API_KEY must be set.")
         resolved_base_url = (
             base_url
             or os.getenv("OPENAI_BASE_URL")
             or os.getenv("OPENROUTER_BASE_URL")
             or None
         )
+        key_env_order = self._api_key_env_order(resolved_base_url, api_key_env)
+        api_key = None
+        for env_name in key_env_order:
+            value = os.getenv(env_name)
+            if value:
+                api_key = value
+                break
+        if not api_key:
+            expected = " or ".join(key_env_order)
+            raise EnvironmentError(f"{expected} must be set.")
         self._model = model
         self._client = OpenAI(api_key=api_key, base_url=resolved_base_url)
         self._batch_size = max(batch_size, 1)
@@ -88,6 +96,18 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         self._max_input_tokens = (
             max_input_tokens if max_input_tokens is not None and max_input_tokens > 0 else None
         )
+
+    @staticmethod
+    def _api_key_env_order(
+        base_url: str | None,
+        api_key_env: str | None,
+    ) -> tuple[str, ...]:
+        """Return API key env vars in provider-appropriate preference order."""
+        if api_key_env:
+            return (api_key_env,)
+        if base_url and "openrouter.ai" in base_url.lower():
+            return ("OPENROUTER_API_KEY", "OPENAI_API_KEY")
+        return ("OPENAI_API_KEY", "OPENROUTER_API_KEY")
 
     def _trim_text_to_input_limit(self, text: str) -> str:
         """Trim one text to provider input limit when configured."""
@@ -433,7 +453,10 @@ def _index_settings_payload(settings: VectorStoreSettings) -> dict[str, object]:
     return {
         "version": INDEX_SETTINGS_VERSION,
         "embedding_model": settings.embedding_model,
+        "embedding_base_url": settings.embedding_base_url,
+        "embedding_api_key_env": settings.embedding_api_key_env,
         "embedding_max_input_tokens": settings.embedding_max_input_tokens,
+        "distance_metric": settings.distance_metric,
         "chunk_tokens": settings.chunk_tokens,
         "chunk_overlap_tokens": settings.chunk_overlap_tokens,
         "table_row_group_max_rows": settings.table_row_group_max_rows,
@@ -656,7 +679,8 @@ def _build_markdown_index_impl(
         )
         provider = OpenAIEmbeddingProvider(
             model=settings.embedding_model,
-            base_url=config.openrouter_base_url,
+            base_url=settings.embedding_base_url or config.openrouter_base_url,
+            api_key_env=settings.embedding_api_key_env,
             batch_size=settings.embedding_batch_size,
             max_retries=settings.embedding_max_retries,
             retry_base_seconds=settings.embedding_retry_base_seconds,
@@ -678,7 +702,11 @@ def _build_markdown_index_impl(
             settings.collection_name,
             settings.persist_path,
         )
-        store = ChromaStore(settings.persist_path, settings.collection_name)
+        store = ChromaStore(
+            settings.persist_path,
+            settings.collection_name,
+            distance_metric=settings.distance_metric,
+        )
         store.reset_collection()
         if embedded_chunks:
             store.upsert(embedded_chunks)
@@ -930,7 +958,8 @@ def _update_markdown_index_impl(
     if changed_chunks and not dry_run:
         provider = OpenAIEmbeddingProvider(
             model=settings.embedding_model,
-            base_url=config.openrouter_base_url,
+            base_url=settings.embedding_base_url or config.openrouter_base_url,
+            api_key_env=settings.embedding_api_key_env,
             batch_size=settings.embedding_batch_size,
             max_retries=settings.embedding_max_retries,
             retry_base_seconds=settings.embedding_retry_base_seconds,
@@ -943,7 +972,11 @@ def _update_markdown_index_impl(
             operation_name="Index update",
         )
     if not dry_run:
-        store = ChromaStore(settings.persist_path, settings.collection_name)
+        store = ChromaStore(
+            settings.persist_path,
+            settings.collection_name,
+            distance_metric=settings.distance_metric,
+        )
         if embedded_changed_chunks:
             store.upsert(embedded_changed_chunks)
         for source_path, chunk_ids in previous_ids_by_source.items():

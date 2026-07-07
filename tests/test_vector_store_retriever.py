@@ -198,7 +198,7 @@ def test_retrieve_chunks_for_queries_applies_distance_floor_and_neighbor_expansi
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, meta = retrieve_chunks_for_queries(
@@ -286,7 +286,7 @@ def test_retrieve_chunks_for_queries_falls_back_to_top_n_when_no_chunks_pass_dis
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, _meta = retrieve_chunks_for_queries(
@@ -362,7 +362,7 @@ def test_retrieve_chunks_for_queries_tops_up_when_too_few_chunks_pass_distance(
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, _meta = retrieve_chunks_for_queries(
@@ -427,7 +427,7 @@ def test_retrieve_chunks_for_queries_uses_manifest_cities_when_not_selected(
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, meta = retrieve_chunks_for_queries(
@@ -493,7 +493,7 @@ def test_retrieve_chunks_for_queries_dedupes_manifest_city_aliases(
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, meta = retrieve_chunks_for_queries(
@@ -612,7 +612,7 @@ def test_retrieve_chunks_for_queries_retries_query_by_embedding_until_success(
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, _meta = retrieve_chunks_for_queries(
@@ -675,7 +675,7 @@ def test_retrieve_chunks_for_queries_retries_neighbor_get_and_raises_after_max_a
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     with pytest.raises(RuntimeError, match="temporary get failure"):
@@ -770,7 +770,7 @@ def test_retrieve_chunks_for_queries_merges_seed_query_ids_and_prefers_qualified
     monkeypatch.setattr(
         retriever_module,
         "ChromaStore",
-        lambda persist_path, collection_name: _FakeStore(),  # noqa: ARG005
+        lambda persist_path, collection_name, distance_metric="l2": _FakeStore(),  # noqa: ARG005
     )
 
     chunks, meta = retrieve_chunks_for_queries(

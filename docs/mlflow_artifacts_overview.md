@@ -164,10 +164,10 @@ per-call JSON artifacts retain the original unsplit `request` and `response`.
 | `stage_files/001_input_snapshot/execution_snapshot.json` | CLI/runtime invocation details: argv, working directory, config path, requested run id, resolved run id, and rerunnable invocation command when available. |
 | `stage_files/001_input_snapshot/code_snapshot.json` | Git snapshot: repo root, commit, branch, dirty flag, and changed files. |
 | `stage_files/001_input_snapshot/config_snapshot.json` | Resolved application config and config file hash. |
-| `stage_files/001_input_snapshot/vector_store_snapshot.json` | Vector-store settings, Chroma paths, collection name, manifest hash, manifest summary, and auto-update diagnostics when an update runs. |
+| `stage_files/001_input_snapshot/vector_store_snapshot.json` | Vector-store settings, Chroma paths, collection name, distance metric, embedding provider settings, manifest hash, manifest summary, and auto-update diagnostics when an update runs. |
 | `stage_files/001_input_snapshot/documents_snapshot.json` | Markdown corpus snapshot: document directory, file count, selected-city file summary, source-library count, file manifest, and snapshot hash. |
 | `stage_files/002_query_preparation/research_question.json` | Original question, query mode, canonical research query, retrieval query list, and explicit retrieval query slots. |
-| `stage_files/003_retrieval/retrieval.json` | Written when vector retrieval is enabled. Contains retrieval queries, optional city filter, retrieval tuning metadata, seed chunks, final delivered chunks, distance/provenance details, and retrieval totals. |
+| `stage_files/003_retrieval/retrieval.json` | Written when vector retrieval is enabled. Contains retrieval queries, optional city filter, distance metric, retrieval tuning metadata, seed chunks, final delivered chunks, distance/provenance details, and retrieval totals. |
 | `stage_files/005_markdown_batching/batches.json` | Markdown researcher batching plan: city batches, estimated token counts, chunk ordering, source paths, chunk indexes, and chunk ids. |
 | `stage_files/005_markdown_batching/source_chunk_index.json` | Chunk id to source metadata lookup used by source/reference views. |
 | `stage_files/006_markdown_extraction/accepted_excerpts.json` | Accepted evidence excerpts. Each excerpt includes citation id, quote, city fields, partial answer, and source chunk ids. |

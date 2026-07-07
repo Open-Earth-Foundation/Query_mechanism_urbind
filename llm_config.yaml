@@ -127,7 +127,10 @@ vector_store:
   enabled: true
   chroma_persist_path: ".chroma"
   chroma_collection_name: "markdown_chunks"
+  distance_metric: "cosine"
   embedding_model: "text-embedding-3-large"
+  embedding_base_url: "https://openrouter.ai/api/v1"
+  embedding_api_key_env: "OPENROUTER_API_KEY"
   embedding_max_input_tokens: 8000
   embedding_batch_size: 100
   embedding_max_retries: 3
@@ -136,7 +139,7 @@ vector_store:
   embedding_chunk_tokens: 800
   embedding_chunk_overlap_tokens: 80
   table_row_group_max_rows: 25
-  retrieval_max_distance: 1.0
+  retrieval_max_distance: 0.55
   retrieval_fallback_min_chunks_per_city_query: 20
   retrieval_max_chunks_per_city_query: 60
   retrieval_max_chunks_per_city: 300

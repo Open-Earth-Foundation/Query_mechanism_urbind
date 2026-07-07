@@ -84,7 +84,11 @@ def main() -> None:
     collection = (
         args.collection if args.collection else config.vector_store.chroma_collection_name
     )
-    store = ChromaStore(persist_path=persist_path, collection_name=collection)
+    store = ChromaStore(
+        persist_path=persist_path,
+        collection_name=collection,
+        distance_metric=config.vector_store.distance_metric,
+    )
 
     if args.show_id:
         payload = store.get(ids=[args.show_id], limit=1)
