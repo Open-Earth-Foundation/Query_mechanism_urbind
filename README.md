@@ -251,8 +251,8 @@ Important distinction between the "max" knobs:
 Distance scale note:
 
 - Do not assume distance is always in `[0, 1]`. It depends on `vector_store.distance_metric` and embedding characteristics.
-- `0` means identical vectors; values above `0` are increasingly dissimilar.
-- A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
+- Treat lower returned distances as more similar for the configured Chroma metric; do not compare absolute values across metrics.
+- A very small cutoff is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
 
 Recommended tuning workflow:
 

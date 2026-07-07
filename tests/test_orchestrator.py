@@ -358,6 +358,59 @@ def test_build_markdown_metrics_summarizes_accepted_and_rejected_distances() -> 
     assert metrics["markdown_rejected_distance_max"] == 0.9
 
 
+def test_build_markdown_metrics_ignores_non_finite_and_boolean_distances() -> None:
+    """Markdown distance metrics ignore values that cannot produce safe summaries."""
+    markdown_chunks = [
+        {"chunk_id": "accepted-valid", "distance": "0.2"},
+        {"chunk_id": "accepted-nan", "distance": "nan"},
+        {"chunk_id": "accepted-inf", "distance": float("inf")},
+        {"chunk_id": "accepted-bool", "distance": True},
+        {"chunk_id": "rejected-valid", "distance": -0.4},
+        {"chunk_id": "rejected-bool", "distance": False},
+    ]
+    markdown_bundle = {
+        "accepted_chunk_ids": [
+            "accepted-valid",
+            "accepted-nan",
+            "accepted-inf",
+            "accepted-bool",
+        ],
+        "excerpt_count": 1,
+    }
+    rejected_artifact = {
+        "status": "complete",
+        "rejected_chunk_ids": ["rejected-valid", "rejected-bool"],
+    }
+    city_summary_artifact = {
+        "cities": [],
+        "cities_with_excerpts": [],
+        "cities_without_excerpts": [],
+        "cities_with_failures": [],
+    }
+    decision_audit_artifact = {
+        "accepted_total": 4,
+        "rejected_total": 2,
+        "unresolved_total": 0,
+        "invariant_ok": True,
+        "status": "complete",
+    }
+
+    metrics = build_markdown_metrics(
+        markdown_chunks=markdown_chunks,
+        markdown_bundle=markdown_bundle,
+        rejected_artifact=rejected_artifact,
+        city_summary_artifact=city_summary_artifact,
+        decision_audit_artifact=decision_audit_artifact,
+    )
+
+    assert metrics["markdown_accepted_distance_count"] == 1
+    assert metrics["markdown_accepted_distance_min"] == 0.2
+    assert metrics["markdown_accepted_distance_max"] == 0.2
+    assert metrics["markdown_rejected_distance_count"] == 1
+    assert metrics["markdown_rejected_distance_min"] == -0.4
+    assert metrics["markdown_rejected_distance_max"] == -0.4
+
+
 def test_run_pipeline_creates_artifacts(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

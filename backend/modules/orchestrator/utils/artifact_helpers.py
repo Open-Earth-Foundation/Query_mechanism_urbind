@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from typing import Any
 
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
@@ -44,11 +45,14 @@ def percentile(values: list[float], percentile_rank: float) -> float | None:
 
 
 def _read_distance(value: object) -> float | None:
-    """Return one numeric distance value when available."""
+    """Return one finite numeric distance value when available."""
+    if isinstance(value, bool):
+        return None
     try:
-        return float(value)
+        distance = float(value)
     except (TypeError, ValueError):
         return None
+    return distance if math.isfinite(distance) else None
 
 
 def build_distance_summary(prefix: str, distances: list[float]) -> dict[str, object]:
