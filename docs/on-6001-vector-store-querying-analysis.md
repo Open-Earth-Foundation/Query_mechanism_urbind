@@ -109,7 +109,16 @@ The default L2 cutoff of `1.0` cut too aggressively in the reduced corpus. It re
 
 ### Accepted and rejected distances overlap
 
-Accepted/rejected distance distributions overlap substantially for both metrics. Distance alone is not enough to separate useful from irrelevant chunks. The markdown extractor is still performing a meaningful filtering step after retrieval.
+Accepted/rejected distance distributions overlap substantially for both metrics. Distance is useful as a first-pass retrieval guardrail, but it is not enough to separate useful chunks from chunks the markdown researcher rejects.
+
+The rerun below used cosine `0.55` on the full Munich/Leipzig corpus with the same top-12-per-city/query retrieval shape as the 26-chunk pipeline comparison above. It was logged to MLflow as run `c97ab757f1a74a7c945552b776409386`.
+
+| Run / Dataset | Group | Count | p50 distance | p90 distance | p95 distance |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Munich-Leipzig full, cosine `0.55` | Accepted | 20 | 0.3920 | 0.4052 | 0.4067 |
+| Munich-Leipzig full, cosine `0.55` | Rejected | 6 | 0.3770 | 0.3901 | 0.3920 |
+
+The rejected chunks are not cleanly above the accepted chunks. In this run, rejected distances start lower than accepted distances and the accepted p95 remains close to the rejected p95. That supports treating distance as a recall-friendly first filter while keeping the markdown researcher as the relevance filter.
 
 ### Some irrelevant context comes from chunk quality
 
@@ -147,6 +156,8 @@ vector_store:
 ```
 
 This should be paired with a full vector-index rebuild. Existing L2 collections are not compatible with cosine collections because Chroma's HNSW metric is collection-level configuration.
+
+Treat `retrieval_max_distance: 0.55` as the preferred qualification threshold rather than a hard guarantee on every delivered chunk. When fewer than `retrieval_fallback_min_chunks_per_city_query` chunks pass the cutoff, the retriever may top up with above-cutoff chunks to preserve recall. If those top-up chunks are consistently rejected downstream, the fallback logic should be revisited in a follow-up.
 
 If production rollout prioritizes recall over strictness, temporarily set `retrieval_max_distance: null` and use the new accepted/rejected audit metrics to choose a production cutoff from real runs.
 
