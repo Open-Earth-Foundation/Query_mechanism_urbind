@@ -732,6 +732,7 @@ def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> Non
     store = ChromaStore.__new__(ChromaStore)
     store._client = FakeClient()
     store._collection_name = "test"
+    store._distance_metric = "cosine"
 
     store.reset_collection()
 
