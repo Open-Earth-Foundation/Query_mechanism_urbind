@@ -71,7 +71,7 @@ class ChromaStore:
 
     def _collection_configuration(self) -> dict[str, object]:
         """Return Chroma collection configuration for the selected distance metric."""
-        return {"hnsw": {"space": getattr(self, "_distance_metric", "l2")}}
+        return {"hnsw": {"space": self._distance_metric}}
 
     def get_collection(self) -> Collection:
         """Get or create underlying Chroma collection."""
