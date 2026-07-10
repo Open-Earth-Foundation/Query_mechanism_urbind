@@ -18,11 +18,13 @@ from backend.modules.markdown_researcher.services import (
 )
 from backend.modules.orchestrator.utils import (
     attach_run_file_logger,
+    build_distance_summary,
     build_markdown_city_summary,
     build_markdown_metrics,
     build_markdown_references,
     build_retrieval_metrics,
     build_source_chunk_index,
+    collect_distances_for_chunk_ids,
     handle_write_decision,
     handle_task_error,
 )
@@ -199,6 +201,9 @@ def _collect_markdown_decision_artifacts(
         city_key = city_by_chunk_id.get(chunk_id, "unknown")
         rejected_by_city.setdefault(city_key, []).append(chunk_id)
 
+    accepted_distances = collect_distances_for_chunk_ids(markdown_chunks, accepted_ids)
+    rejected_distances = collect_distances_for_chunk_ids(markdown_chunks, rejected_ids)
+
     invariant_ok = not (
         overlap_decision_ids
         or unknown_decision_ids
@@ -225,6 +230,8 @@ def _collect_markdown_decision_artifacts(
         "accepted_total": len(accepted_ids),
         "rejected_total": len(rejected_ids),
         "unresolved_total": len(unresolved_ids),
+        **build_distance_summary("markdown_accepted", accepted_distances),
+        **build_distance_summary("markdown_rejected", rejected_distances),
         "invariant_ok": invariant_ok,
         "missing_chunk_ids": missing_chunk_ids,
         "unknown_decision_ids": unknown_decision_ids,
@@ -318,6 +325,7 @@ def _write_input_snapshots(
         "vector_store": {
             "enabled": vector_store_snapshot.get("enabled"),
             "collection_name": vector_store_snapshot.get("collection_name"),
+            "distance_metric": vector_store_snapshot.get("distance_metric"),
             "index_manifest_hash": vector_store_snapshot.get("index_manifest_hash"),
             "manifest_summary": vector_store_snapshot.get("manifest_summary"),
         },
@@ -368,6 +376,7 @@ def _refresh_vector_store_snapshot(
     updated_summary["vector_store"] = {
         "enabled": vector_store_snapshot.get("enabled"),
         "collection_name": vector_store_snapshot.get("collection_name"),
+        "distance_metric": vector_store_snapshot.get("distance_metric"),
         "index_manifest_hash": vector_store_snapshot.get("index_manifest_hash"),
         "manifest_summary": vector_store_snapshot.get("manifest_summary"),
         "auto_update": vector_store_snapshot.get("auto_update"),
@@ -595,6 +604,7 @@ def run_pipeline(
                         "queries": retrieval_queries,
                         "selected_cities": selected_cities or [],
                         "vector_store_enabled": True,
+                        "distance_metric": config.vector_store.distance_metric,
                         "retrieval_max_distance": config.vector_store.retrieval_max_distance,
                         "retrieval_max_chunks_per_city_query": (
                             config.vector_store.retrieval_max_chunks_per_city_query

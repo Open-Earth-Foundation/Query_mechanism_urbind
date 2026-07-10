@@ -157,6 +157,21 @@ def build_vector_store_snapshot(
         "created_at": manifest.get("created_at") if manifest else None,
         "updated_at": manifest.get("updated_at") if manifest else None,
         "embedding_model": manifest.get("embedding_model") if manifest else None,
+        "embedding_base_url": (
+            manifest.get("index_settings", {}).get("embedding_base_url")
+            if isinstance(manifest.get("index_settings"), dict)
+            else None
+        ),
+        "embedding_api_key_env": (
+            manifest.get("index_settings", {}).get("embedding_api_key_env")
+            if isinstance(manifest.get("index_settings"), dict)
+            else None
+        ),
+        "distance_metric": (
+            manifest.get("index_settings", {}).get("distance_metric")
+            if isinstance(manifest.get("index_settings"), dict)
+            else None
+        ),
         "embedding_chunk_tokens": manifest.get("embedding_chunk_tokens") if manifest else None,
         "embedding_chunk_overlap_tokens": (
             manifest.get("embedding_chunk_overlap_tokens") if manifest else None
@@ -169,6 +184,7 @@ def build_vector_store_snapshot(
         "enabled": config.vector_store.enabled,
         "persist_path": str(config.vector_store.chroma_persist_path),
         "collection_name": config.vector_store.chroma_collection_name,
+        "distance_metric": config.vector_store.distance_metric,
         "index_manifest_path": str(manifest_path),
         "index_manifest_exists": manifest_path.exists(),
         "index_manifest_hash": _file_hash(manifest_path),

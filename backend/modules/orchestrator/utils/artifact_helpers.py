@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from typing import Any
 
 from backend.utils.city_normalization import format_city_stem, normalize_city_key
@@ -43,6 +44,48 @@ def percentile(values: list[float], percentile_rank: float) -> float | None:
     return ordered[index]
 
 
+def _read_distance(value: object) -> float | None:
+    """Return one finite numeric distance value when available."""
+    if isinstance(value, bool):
+        return None
+    try:
+        distance = float(value)
+    except (TypeError, ValueError):
+        return None
+    return distance if math.isfinite(distance) else None
+
+
+def build_distance_summary(prefix: str, distances: list[float]) -> dict[str, object]:
+    """Return count and percentile metrics for one distance split."""
+    return {
+        f"{prefix}_distance_count": len(distances),
+        f"{prefix}_distance_min": min(distances) if distances else None,
+        f"{prefix}_distance_p50": percentile(distances, 0.50),
+        f"{prefix}_distance_p90": percentile(distances, 0.90),
+        f"{prefix}_distance_p95": percentile(distances, 0.95),
+        f"{prefix}_distance_max": max(distances) if distances else None,
+    }
+
+
+def collect_distances_for_chunk_ids(
+    markdown_chunks: list[dict[str, object]],
+    chunk_ids: object,
+) -> list[float]:
+    """Return distances for the requested chunk ids in markdown chunk order."""
+    if not isinstance(chunk_ids, list):
+        return []
+    requested_ids = {str(chunk_id).strip() for chunk_id in chunk_ids if str(chunk_id).strip()}
+    distances: list[float] = []
+    for chunk in markdown_chunks:
+        chunk_id = str(chunk.get("chunk_id", "")).strip()
+        if chunk_id not in requested_ids:
+            continue
+        distance = _read_distance(chunk.get("distance"))
+        if distance is not None:
+            distances.append(distance)
+    return distances
+
+
 def build_retrieval_metrics(retrieval_payload: dict[str, object]) -> dict[str, object]:
     """Summarize retrieval payload counts and distances for observability."""
     chunks = retrieval_payload.get("chunks")
@@ -57,9 +100,9 @@ def build_retrieval_metrics(retrieval_payload: dict[str, object]) -> dict[str, o
         else []
     )
     distances = [
-        float(item["distance"])
+        distance
         for item in chunk_entries
-        if isinstance(item.get("distance"), (int, float))
+        if (distance := _read_distance(item.get("distance"))) is not None
     ]
     meta_payload = meta if isinstance(meta, dict) else {}
     return {
@@ -118,7 +161,17 @@ def build_markdown_metrics(
     accepted_total = int(decision_audit_artifact.get("accepted_total") or 0)
     rejected_total = int(decision_audit_artifact.get("rejected_total") or 0)
     total_decisions = accepted_total + rejected_total
+    accepted_distances = collect_distances_for_chunk_ids(
+        markdown_chunks,
+        markdown_bundle.get("accepted_chunk_ids"),
+    )
+    rejected_distances = collect_distances_for_chunk_ids(
+        markdown_chunks,
+        rejected_artifact.get("rejected_chunk_ids"),
+    )
     return {
+        **build_distance_summary("markdown_accepted", accepted_distances),
+        **build_distance_summary("markdown_rejected", rejected_distances),
         "markdown_chunk_count": len(markdown_chunks),
         "markdown_accepted_count": accepted_total,
         "markdown_rejected_count": rejected_total,

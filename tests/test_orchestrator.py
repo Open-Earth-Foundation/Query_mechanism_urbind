@@ -13,7 +13,11 @@ from backend.modules.orchestrator.module import (
     _collect_markdown_decision_artifacts,
     run_pipeline,
 )
-from backend.modules.orchestrator.utils import build_markdown_city_summary
+from backend.modules.orchestrator.utils import (
+    build_retrieval_metrics,
+    build_markdown_city_summary,
+    build_markdown_metrics,
+)
 from backend.modules.writer.models import WriterCitationCoverage, WriterOutput
 from backend.utils.config import AppConfig
 from backend.utils.logging_config import setup_logger
@@ -43,6 +47,25 @@ def _build_test_config(*, runs_dir: Path, markdown_dir: Path) -> AppConfig:
         markdown_dir=markdown_dir,
         vector_store_overrides={"enabled": False},
     )
+
+
+def test_build_retrieval_metrics_preserves_negative_ip_distances() -> None:
+    """Distance summaries keep valid negative distances from inner-product search."""
+    metrics = build_retrieval_metrics(
+        {
+            "chunks": [
+                {"chunk_id": "a", "distance": -0.8},
+                {"chunk_id": "b", "distance": 0.2},
+            ],
+            "seed_chunks": [],
+            "meta": {},
+            "selected_cities": [],
+            "queries": [],
+        }
+    )
+
+    assert metrics["retrieval_distance_min"] == -0.8
+    assert metrics["retrieval_distance_max"] == 0.2
 
 
 def _stub_markdown(
@@ -143,6 +166,10 @@ def test_collect_markdown_decision_artifacts_keeps_rejected_chunks_lightweight()
     assert rejected_artifact["rejected_chunk_ids"] == ["chunk-2"]
     assert rejected_artifact["rejected_by_city"] == {"leipzig": ["chunk-2"]}
     assert "rejected_chunks" not in rejected_artifact
+    assert audit_artifact["markdown_accepted_distance_count"] == 1
+    assert audit_artifact["markdown_accepted_distance_min"] == 0.123
+    assert audit_artifact["markdown_rejected_distance_count"] == 1
+    assert audit_artifact["markdown_rejected_distance_max"] == 0.456
     assert audit_artifact["status"] == "complete"
 
 
@@ -279,6 +306,109 @@ def test_build_markdown_city_summary_dedupes_failed_batch_unresolved_chunks() ->
             "city_key": "leipzig",
         }
     ]
+
+
+def test_build_markdown_metrics_summarizes_accepted_and_rejected_distances() -> None:
+    """Markdown metrics include distance distributions for decision splits."""
+    markdown_chunks = [
+        {"chunk_id": "chunk-1", "distance": 0.1},
+        {"chunk_id": "chunk-2", "distance": "0.3"},
+        {"chunk_id": "chunk-3", "distance": 0.9},
+        {"chunk_id": "chunk-4", "distance": "not-a-number"},
+    ]
+    markdown_bundle = {
+        "accepted_chunk_ids": ["chunk-1", "chunk-2"],
+        "excerpt_count": 2,
+    }
+    rejected_artifact = {
+        "status": "complete",
+        "rejected_chunk_ids": ["chunk-3", "chunk-4"],
+    }
+    city_summary_artifact = {
+        "cities": [],
+        "cities_with_excerpts": [],
+        "cities_without_excerpts": [],
+        "cities_with_failures": [],
+    }
+    decision_audit_artifact = {
+        "accepted_total": 2,
+        "rejected_total": 2,
+        "unresolved_total": 0,
+        "invariant_ok": True,
+        "status": "complete",
+    }
+
+    metrics = build_markdown_metrics(
+        markdown_chunks=markdown_chunks,
+        markdown_bundle=markdown_bundle,
+        rejected_artifact=rejected_artifact,
+        city_summary_artifact=city_summary_artifact,
+        decision_audit_artifact=decision_audit_artifact,
+    )
+
+    assert metrics["markdown_accepted_distance_count"] == 2
+    assert metrics["markdown_accepted_distance_min"] == 0.1
+    assert metrics["markdown_accepted_distance_p50"] == 0.1
+    assert metrics["markdown_accepted_distance_p95"] == 0.3
+    assert metrics["markdown_accepted_distance_max"] == 0.3
+    assert metrics["markdown_rejected_distance_count"] == 1
+    assert metrics["markdown_rejected_distance_min"] == 0.9
+    assert metrics["markdown_rejected_distance_p50"] == 0.9
+    assert metrics["markdown_rejected_distance_p95"] == 0.9
+    assert metrics["markdown_rejected_distance_max"] == 0.9
+
+
+def test_build_markdown_metrics_ignores_non_finite_and_boolean_distances() -> None:
+    """Markdown distance metrics ignore values that cannot produce safe summaries."""
+    markdown_chunks = [
+        {"chunk_id": "accepted-valid", "distance": "0.2"},
+        {"chunk_id": "accepted-nan", "distance": "nan"},
+        {"chunk_id": "accepted-inf", "distance": float("inf")},
+        {"chunk_id": "accepted-bool", "distance": True},
+        {"chunk_id": "rejected-valid", "distance": -0.4},
+        {"chunk_id": "rejected-bool", "distance": False},
+    ]
+    markdown_bundle = {
+        "accepted_chunk_ids": [
+            "accepted-valid",
+            "accepted-nan",
+            "accepted-inf",
+            "accepted-bool",
+        ],
+        "excerpt_count": 1,
+    }
+    rejected_artifact = {
+        "status": "complete",
+        "rejected_chunk_ids": ["rejected-valid", "rejected-bool"],
+    }
+    city_summary_artifact = {
+        "cities": [],
+        "cities_with_excerpts": [],
+        "cities_without_excerpts": [],
+        "cities_with_failures": [],
+    }
+    decision_audit_artifact = {
+        "accepted_total": 4,
+        "rejected_total": 2,
+        "unresolved_total": 0,
+        "invariant_ok": True,
+        "status": "complete",
+    }
+
+    metrics = build_markdown_metrics(
+        markdown_chunks=markdown_chunks,
+        markdown_bundle=markdown_bundle,
+        rejected_artifact=rejected_artifact,
+        city_summary_artifact=city_summary_artifact,
+        decision_audit_artifact=decision_audit_artifact,
+    )
+
+    assert metrics["markdown_accepted_distance_count"] == 1
+    assert metrics["markdown_accepted_distance_min"] == 0.2
+    assert metrics["markdown_accepted_distance_max"] == 0.2
+    assert metrics["markdown_rejected_distance_count"] == 1
+    assert metrics["markdown_rejected_distance_min"] == -0.4
+    assert metrics["markdown_rejected_distance_max"] == -0.4
 
 
 def test_run_pipeline_creates_artifacts(
@@ -589,6 +719,7 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
         return {
             "enabled": True,
             "collection_name": "test_chunks",
+            "distance_metric": "cosine",
             "index_manifest_hash": next(snapshot_hashes),
             "manifest_summary": {"chunk_count": 1},
             "auto_update": auto_update,
@@ -674,6 +805,7 @@ def test_run_pipeline_refreshes_vector_store_snapshot_after_auto_update(
         input_snapshot["snapshot_summary"]["vector_store"]["index_manifest_hash"]
         == "after-update"
     )
+    assert input_snapshot["snapshot_summary"]["vector_store"]["distance_metric"] == "cosine"
     auto_update = vector_snapshot["auto_update"]
     assert auto_update["ran"] is True
     assert auto_update["update_mode"] == "incremental_update"

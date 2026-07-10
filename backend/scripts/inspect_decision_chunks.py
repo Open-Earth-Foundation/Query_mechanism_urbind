@@ -305,6 +305,7 @@ def main() -> None:
     store = ChromaStore(
         persist_path=config.vector_store.chroma_persist_path,
         collection_name=config.vector_store.chroma_collection_name,
+        distance_metric=config.vector_store.distance_metric,
     )
     output_path = (
         Path(args.output_file)

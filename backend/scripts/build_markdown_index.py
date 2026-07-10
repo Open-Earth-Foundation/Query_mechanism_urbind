@@ -13,11 +13,13 @@ Inputs:
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
 - Env vars:
   - OPENAI_API_KEY or OPENROUTER_API_KEY: key for embeddings when not in dry-run mode.
+  - VECTOR_STORE_EMBEDDING_BASE_URL (optional): OpenAI-compatible embedding endpoint override.
+  - VECTOR_STORE_EMBEDDING_API_KEY_ENV (optional): env var name to use exclusively for embedding API auth.
   - ANONYMIZED_TELEMETRY (optional, default false): disables Chroma telemetry when set to false.
   - CHROMA_PERSIST_PATH (optional): override Chroma persistence root (manifest path follows this root when defaulted).
 - Config file (`llm_config.yaml`):
   - `vector_store.*` controls embedding and retrieval/index settings (model, chunking,
-    retries, distance cutoffs, context windows, auto-update, manifest path).
+    retries, distance metric, distance cutoffs, context windows, auto-update, manifest path).
 
 Outputs:
 - Chroma collection persisted to disk (unless --dry-run).

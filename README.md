@@ -95,6 +95,8 @@ Environment variables (`.env`):
 - `CHROMA_PERSIST_PATH` (optional, default `.chroma`): local Chroma persistence directory.
 - `CHROMA_HOST_PATH` (optional, default `.chroma`): local Docker Compose host folder mounted into backend container path `/data/chroma`. This is local-only and does not affect Kubernetes or direct Python runs.
 - `CHROMA_COLLECTION_NAME` (optional, default `markdown_chunks`): Chroma collection used for markdown chunks.
+- `VECTOR_STORE_EMBEDDING_BASE_URL` (optional): overrides `vector_store.embedding_base_url` for embedding requests. Use `https://openrouter.ai/api/v1` to send embeddings through OpenRouter.
+- `VECTOR_STORE_EMBEDDING_API_KEY_ENV` (optional): overrides `vector_store.embedding_api_key_env`. When set, only that env var is used for embedding API auth.
 - `EXTERNAL_SOURCE_SEARCH_ENABLED` (optional, default `true`): enables governed external Markdown library enrichment when `sources.yaml` is available.
 - `EXTERNAL_SOURCE_DIR` (optional, default `documents/source_library`): directory containing `sources.yaml` and Markdown files whose stems match `source_id`.
 
@@ -111,64 +113,36 @@ Use `--city` (repeatable) to load markdown only for selected city files. City fi
 
 Example `.env.example` is provided. Use `llm_config.yaml` as the source of truth for vector-store and markdown batching tuning; deployment env vars may override operational toggles such as `VECTOR_STORE_ENABLED`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN`, and `VECTOR_STORE_UPDATE_MODE`.
 
-### Local dual vector stores
+### Local vector store
 
-For local development we currently support two side-by-side vector stores:
-
-- `.chroma`: default L2 store used by `main`
-- `.chroma_cosine`: local cosine-distance store used only when testing the retrieval-improvement branch
+The default local vector-store path is `.chroma`. Its distance metric is determined by `vector_store.distance_metric` in `llm_config.yaml`; with the current default config, `.chroma` uses cosine distance.
 
 Keep these rules in mind:
 
 - Direct `python -m ...` runs use `CHROMA_PERSIST_PATH`.
 - Docker Compose keeps reading `/data/chroma` inside the backend container, but the host folder behind that path is selected by `CHROMA_HOST_PATH`.
-- If you point a branch at the wrong local store, the backend can trigger a full rebuild check because the persisted index settings do not match that branch's expected vector-store settings.
-- This split is local-only. Kubernetes and deployed environments continue using `/data/chroma`.
+- If the persisted index settings do not match the current config, the backend can trigger a full rebuild check.
+- Kubernetes and deployed environments continue using `/data/chroma`.
 
-Default local settings for `main`:
-
-```dotenv
-CHROMA_PERSIST_PATH=.chroma
-CHROMA_HOST_PATH=.chroma
-```
-
-Local settings when testing the cosine branch:
-
-```dotenv
-CHROMA_PERSIST_PATH=.chroma_cosine
-CHROMA_HOST_PATH=.chroma_cosine
-```
-
-One-time local migration from the current cosine store:
-
-1. Stop local Python processes and Docker Compose containers that may be using `.chroma`.
-2. Rename the current cosine store directory:
-
-```powershell
-Move-Item -LiteralPath .chroma -Destination .chroma_cosine
-```
-
-3. Set local defaults back to the L2 store in `.env`:
+Default local settings:
 
 ```dotenv
 CHROMA_PERSIST_PATH=.chroma
 CHROMA_HOST_PATH=.chroma
 ```
 
-4. Recreate Docker Compose containers if you use Compose:
+After changing `vector_store.distance_metric` or other index-shaping settings, rebuild or refresh the local vector store so the persisted collection matches the current config. Recreate Docker Compose containers if you use Compose and change `CHROMA_HOST_PATH`:
 
 ```powershell
 docker compose down
 docker compose up -d
 ```
 
-5. Build or warm up a fresh L2 store into `.chroma` while on `main`:
+Build or warm up the default local store with:
 
 ```powershell
 python -m backend.scripts.update_vector_store --trigger manual
 ```
-
-6. When switching to the cosine branch for local testing, update `.env` to `.chroma_cosine` values and restart the relevant process. Docker Compose does not need an image rebuild, but it does need container recreation after the `.env` change.
 
 Default output directory is `output/` (unless overridden by `RUNS_DIR`).
 
@@ -231,6 +205,10 @@ When vector retrieval is enabled, retrieval runs per city and per user-provided 
 - Strict Stage A benchmark metrics must use `seed_chunks[]`, not `chunks[]`.
 - Every serialized retrieval chunk now includes `chunk_index` plus `provenance`
   (`origin`, `selection_mode`, `seed_rank`, `seed_query_ids`, `expanded_from_chunk_ids`).
+- `vector_store.distance_metric` selects the Chroma HNSW space (`l2`, `cosine`, or `ip`). Changing it requires a separate index or a full rebuild because stored vectors are tied to the collection metric.
+- The default metric is `cosine` with `vector_store.retrieval_max_distance: 0.55`, based on the ON-6001 calibration runs documented in `docs/on-6001-vector-store-querying-analysis.md`.
+- `vector_store.embedding_base_url` and `vector_store.embedding_api_key_env` configure the OpenAI-compatible embedding endpoint separately from the chat/LLM provider. If `embedding_api_key_env` is set, only that env var is used; otherwise OpenRouter endpoints prefer `OPENROUTER_API_KEY` before `OPENAI_API_KEY`.
+- Changing `vector_store.distance_metric`, `vector_store.embedding_base_url`, `vector_store.embedding_api_key_env`, or other index settings changes the manifest signature and requires rebuilding the vector index before comparing retrieval runs.
 - `vector_store.retrieval_max_distance` is the strictness control:
   - smaller value = stricter matching, fewer chunks;
   - larger value = higher recall, more chunks.
@@ -244,9 +222,9 @@ Important distinction between the "max" knobs:
 
 Distance scale note:
 
-- Do not assume distance is always in `[0, 1]`. It depends on collection metric and embedding characteristics.
-- `0` means identical vectors; values above `0` are increasingly dissimilar.
-- A cutoff of `0` is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
+- Do not assume distance is always in `[0, 1]`. It depends on `vector_store.distance_metric` and embedding characteristics.
+- Treat lower returned distances as more similar for the configured Chroma metric; do not compare absolute values across metrics.
+- A very small cutoff is the strictest setting and usually returns very few (often zero) chunks, not all chunks.
 
 Recommended tuning workflow:
 
@@ -254,8 +232,9 @@ Recommended tuning workflow:
    - leave `vector_store.retrieval_max_distance` empty, or set a permissive value;
    - set `vector_store.retrieval_fallback_min_chunks_per_city_query` to a meaningful fallback (for example 20-40).
 2. Run and inspect `output/<run_id>/stage_files/003_retrieval/retrieval.json` for returned distances and counts.
-3. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution.
-4. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
+3. Inspect `output/<run_id>/stage_files/006_markdown_extraction/decision_audit.json` for accepted/rejected distance summaries when markdown extraction runs.
+4. Set/tighten `vector_store.retrieval_max_distance` based on observed distance distribution and accepted/rejected split.
+5. Add `vector_store.retrieval_max_chunks_per_city` only if latency/cost grows too much.
 
 ## Shared password gate (required)
 
@@ -1257,8 +1236,8 @@ is set.
 - `stage_files/006_markdown_extraction/accepted_excerpts.json`: accepted markdown evidence bundle. Includes `excerpts` (items with `ref_id`, `quote`, `city_name`, `city_key`, `partial_answer`, and `source_chunk_ids`) and `excerpt_count` (count of accepted excerpts). Run-level city scope lives on the root `context_bundle.json` and in stage inputs/outputs instead of inside the markdown-only payload. Stage B extraction recall uses the union of `excerpts[].source_chunk_ids`, and `/references` API responses are derived from this artifact.
 - `stage_files/006_markdown_extraction/city_summary.json`: city-level extraction observability artifact. Includes per-city batch counts, chunk decision counts, excerpt counts, status/error rollups, and top-level `cities_with_excerpts` / `cities_without_excerpts` / `cities_with_failures` lists for quick verification.
 - `stage_files/006_markdown_extraction/rejected_chunks.json`: rejected markdown decision artifact with rejected chunk IDs, rejected-per-city grouping, status, and counts. Full chunk text for rejected IDs is available in `stage_files/003_retrieval/retrieval.json` when vector retrieval is enabled.
-- `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, invariant status, and mismatch details).
-- `stage_files/003_retrieval/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (cutoffs/caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_text`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
+- `stage_files/006_markdown_extraction/decision_audit.json`: run-level reconciliation counters and diagnostics (`retrieved_total`, accepted/rejected/unresolved totals, accepted/rejected distance summaries, invariant status, and mismatch details).
+- `stage_files/003_retrieval/retrieval.json` (when `VECTOR_STORE_ENABLED=true`): vector retrieval inputs and results summary. Includes the final retrieval query list, optional city filter, retrieval tuning metadata (metric, cutoffs, caps), strict direct-hit `seed_chunks[]`, final delivered `chunks[]`, `meta.distance_metric`, `meta.seed_retrieved_total_chunks`, `meta.neighbor_expanded_total_chunks`, and per-chunk summaries (`chunk_id`, `chunk_text`, `chunk_index`, `city_name`, `city_key`, `source_path`, `heading_path`, `block_type`, `distance`, `provenance`).
 - `stage_files/005_markdown_batching/batches.json`: markdown batching plan used for the markdown researcher calls. Includes per-city batch indices, estimated tokens, and chunk ordering fields (`path`, `chunk_index`, `chunk_id`), making it easy to inspect how chunks were grouped into LLM requests.
 - `stage_files/007_markdown_context_handoff/context_bundle_after_markdown.json`: immutable full context snapshot after the markdown pipeline finishes.
 - `stage_files/008_enrichment/enrichment_bundle.json`: canonical full enrichment payload. Includes `field_manifest`, `gap_manifest`, `enriched_fields`, web/external/freshness evidence, and enrichment metadata. Duplicate projection files such as standalone field/gap manifests are not written.
@@ -1382,7 +1361,7 @@ python -m backend.scripts.analyze_retrieval_distances --city Munich --city Leipz
 How to use the output:
 
 - Start with `vector_store.retrieval_max_distance` empty (no distance filtering) and run a few representative queries.
-- Run the analysis script and look at the overall/per-city percentiles.
+- Run the analysis script and look at the overall/per-city percentiles, then compare `markdown_accepted_distance_*` and `markdown_rejected_distance_*` in `stage_files/006_markdown_extraction/decision_audit.json`.
 - Pick a cutoff that keeps the bulk of “good” chunks (often somewhere around the p90–p99 region for your corpus), then iterate.
 
 Dry-run build that also writes chunks to JSON for inspection (no embeddings, no Chroma writes):
@@ -1410,6 +1389,8 @@ What triggers a full rebuild instead of an incremental refresh:
 
 - The manifest is missing the persisted index-settings metadata needed to prove the current vectors are still compatible.
 - `vector_store.embedding_model` changes.
+- `vector_store.distance_metric` changes.
+- `vector_store.embedding_base_url` or `vector_store.embedding_api_key_env` changes.
 - `vector_store.embedding_max_input_tokens` changes.
 - `vector_store.embedding_chunk_tokens` changes.
 - `vector_store.embedding_chunk_overlap_tokens` changes.
@@ -1426,7 +1407,7 @@ Vector-store freshness behavior:
 - Shared status is written next to the vector index as `update_status.json`. It now stores a compact summary plus small samples, while full changed/deleted file lists remain in `output/system/vector_store_warmup/`. Startup/run diagnostics are persisted under `output/system/vector_store_warmup/` as both `latest.json` and timestamped history files, including pre/post manifest summaries, an `update_interpretation`, lock details, `manifest_write_occurred`, and `manifest_write_audit_applies_to_this_run` so it is clear whether the embedded manifest-write audit belongs to the current run or is only the latest historical write. Manifest writes are audited separately under `output/system/vector_store_manifest_writes/`.
 - Non-dry-run vector-store writes also coordinate through `.chroma/vector_store_update.lock` so startup, run-time, and manual rebuild/update processes do not overlap on the same local Chroma directory.
 - Kubernetes deployments should keep a single backend replica or add a stronger distributed lock before multiple replicas can check or rebuild the same Chroma path.
-- Branch-local vector-store formats can diverge. If a local run suddenly forces a full rebuild check after switching branches, verify that `.env` points to the intended local store (`.chroma` for L2 on `main`, `.chroma_cosine` for cosine branch testing) before rebuilding.
+- Branch-local vector-store settings can diverge. If a local run suddenly forces a full rebuild check after switching branches, verify that `.env` points to the intended local store and that `vector_store.distance_metric` matches the persisted collection before rebuilding.
 
 Check manifest and Chroma DB status:
 

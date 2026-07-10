@@ -31,6 +31,8 @@ flowchart TD
 ## Decisions
 
 - **City scope:** selected city filters come from the API/CLI run input. If no city filter is provided, the run can consider all top-level city Markdown files.
+- **Distance metric:** `vector_store.distance_metric` selects the Chroma HNSW space (`l2`, `cosine`, or `ip`) used by the persisted collection. The current default is `cosine`.
+- **Embedding provider:** `vector_store.embedding_base_url` and `vector_store.embedding_api_key_env` configure the OpenAI-compatible embeddings endpoint separately from the chat/LLM provider. When the key env is explicit, only that env var is used.
 - **Vector cutoff:** `vector_store.retrieval_max_distance` controls strictness. A low cutoff improves relevance but can drop useful chunks.
 - **Fallback top-up:** if too few chunks pass the cutoff, retrieval can add next-best chunks to preserve recall.
 - **Neighbor expansion:** vector hits can pull neighboring chunks to restore local document context.
@@ -50,9 +52,13 @@ Retrieval does not directly add final evidence to `context_bundle.markdown`. It 
 - `VECTOR_STORE_ENABLED`
 - `MARKDOWN_DIR`
 - `vector_store.retrieval_max_chunks_per_city_query`
+- `vector_store.distance_metric`
+- `vector_store.embedding_base_url`
+- `vector_store.embedding_api_key_env`
 - `vector_store.retrieval_max_distance`
 - `vector_store.retrieval_fallback_min_chunks_per_city_query`
-- `vector_store.retrieval_neighbor_window`
+- `vector_store.context_window_chunks`
+- `vector_store.table_context_window_chunks`
 - `vector_store.retrieval_max_chunks_per_city`
 
 ## Boundaries And Limitations
@@ -60,3 +66,5 @@ Retrieval does not directly add final evidence to `context_bundle.markdown`. It 
 - Retrieval is recall-oriented. It may include chunks that do not become evidence.
 - A retrieved chunk is not a citation until the markdown researcher accepts an excerpt.
 - Vector retrieval quality depends on the vector-store manifest matching the current `documents/` corpus.
+- Metric and embedding-provider changes require a separate persisted index or full rebuild; distance values are not directly comparable across metrics.
+- ON-6001 calibration selected `vector_store.retrieval_max_distance: 0.55` as the initial cosine cutoff. See `docs/on-6001-vector-store-querying-analysis.md` for the supporting analysis.

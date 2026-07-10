@@ -11,6 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 ReasoningEffort = Literal["none", "minimal", "low", "medium", "high", "xhigh"]
 VectorStoreUpdateMode = Literal["local_process", "kubernetes_job"]
+VectorStoreDistanceMetric = Literal["l2", "cosine", "ip"]
 MlflowTraceMode = Literal["consolidated"]
 
 
@@ -161,7 +162,10 @@ class VectorStoreConfig(BaseModel):
     enabled: bool = False
     chroma_persist_path: Path = Field(default_factory=lambda: Path(".chroma"))
     chroma_collection_name: str = "markdown_chunks"
+    distance_metric: VectorStoreDistanceMetric = "l2"
     embedding_model: str = "text-embedding-3-large"
+    embedding_base_url: str | None = None
+    embedding_api_key_env: str | None = None
     embedding_max_input_tokens: int | None = 8000
     embedding_batch_size: int = 100
     embedding_chunk_tokens: int = 800
@@ -313,6 +317,8 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
     vector_store_update_mode = os.getenv("VECTOR_STORE_UPDATE_MODE")
     chroma_persist_path = os.getenv("CHROMA_PERSIST_PATH")
     chroma_collection_name = os.getenv("CHROMA_COLLECTION_NAME")
+    vector_store_embedding_base_url = os.getenv("VECTOR_STORE_EMBEDDING_BASE_URL")
+    vector_store_embedding_api_key_env = os.getenv("VECTOR_STORE_EMBEDDING_API_KEY_ENV")
     mlflow_enabled = os.getenv("MLFLOW_ENABLED")
     mlflow_tracking_uri = os.getenv("MLFLOW_TRACKING_URI")
     mlflow_experiment_name = os.getenv("MLFLOW_EXPERIMENT_NAME")
@@ -362,6 +368,10 @@ def load_config(config_path: Optional[Path] = None) -> AppConfig:
             )
     if chroma_collection_name:
         config.vector_store.chroma_collection_name = chroma_collection_name
+    if vector_store_embedding_base_url is not None:
+        config.vector_store.embedding_base_url = vector_store_embedding_base_url.strip() or None
+    if vector_store_embedding_api_key_env is not None:
+        config.vector_store.embedding_api_key_env = vector_store_embedding_api_key_env.strip() or None
     if mlflow_enabled is not None:
         parsed = _parse_env_bool(mlflow_enabled)
         if parsed is not None:

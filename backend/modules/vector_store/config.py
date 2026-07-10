@@ -11,7 +11,10 @@ class VectorStoreSettings:
     enabled: bool
     persist_path: Path
     collection_name: str
+    distance_metric: str
     embedding_model: str
+    embedding_base_url: str | None
+    embedding_api_key_env: str | None
     embedding_max_input_tokens: int | None
     embedding_batch_size: int
     embedding_max_retries: int
@@ -38,7 +41,10 @@ def get_vector_store_settings(config: AppConfig) -> VectorStoreSettings:
         enabled=vector_store.enabled,
         persist_path=vector_store.chroma_persist_path,
         collection_name=vector_store.chroma_collection_name,
+        distance_metric=vector_store.distance_metric,
         embedding_model=vector_store.embedding_model,
+        embedding_base_url=vector_store.embedding_base_url or config.openrouter_base_url or None,
+        embedding_api_key_env=vector_store.embedding_api_key_env,
         embedding_max_input_tokens=vector_store.embedding_max_input_tokens,
         embedding_batch_size=vector_store.embedding_batch_size,
         embedding_max_retries=max_embedding_retries,

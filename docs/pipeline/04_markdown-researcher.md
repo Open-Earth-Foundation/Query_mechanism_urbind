@@ -66,7 +66,7 @@ This block is the writer's primary cited evidence source.
 - `stage_files/005_markdown_batching/source_chunk_index.json`
 - `stage_files/006_markdown_extraction/accepted_excerpts.json`
 - `stage_files/006_markdown_extraction/rejected_chunks.json`
-- `stage_files/006_markdown_extraction/decision_audit.json`
+- `stage_files/006_markdown_extraction/decision_audit.json` with reconciliation counters plus accepted/rejected distance summaries when vector retrieval provides distances. Interpret those distributions together with the vector-store `distance_metric` recorded in retrieval/input-snapshot artifacts.
 - `stage_files/006_markdown_extraction/city_summary.json`
 - `stage_files/007_markdown_context_handoff/context_bundle_after_markdown.json`
 

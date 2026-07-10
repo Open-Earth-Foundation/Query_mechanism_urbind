@@ -13,6 +13,7 @@ from backend.modules.vector_store.indexer import (
     build_markdown_index,
     update_markdown_index,
 )
+from backend.modules.vector_store.config import get_vector_store_settings
 from backend.modules.vector_store.manifest import (
     build_chunk_id,
     load_manifest,
@@ -53,13 +54,17 @@ def _build_config(tmp_path: Path) -> AppConfig:
 
 def _matching_index_settings_payload(config: AppConfig) -> dict[str, object]:
     """Return manifest index-settings metadata matching the test config."""
+    settings = get_vector_store_settings(config)
     return {
-        "version": 1,
-        "embedding_model": config.vector_store.embedding_model,
-        "embedding_max_input_tokens": config.vector_store.embedding_max_input_tokens,
-        "chunk_tokens": config.vector_store.embedding_chunk_tokens,
-        "chunk_overlap_tokens": config.vector_store.embedding_chunk_overlap_tokens,
-        "table_row_group_max_rows": config.vector_store.table_row_group_max_rows,
+        "version": 2,
+        "embedding_model": settings.embedding_model,
+        "embedding_base_url": settings.embedding_base_url,
+        "embedding_api_key_env": settings.embedding_api_key_env,
+        "embedding_max_input_tokens": settings.embedding_max_input_tokens,
+        "distance_metric": settings.distance_metric,
+        "chunk_tokens": settings.chunk_tokens,
+        "chunk_overlap_tokens": settings.chunk_overlap_tokens,
+        "table_row_group_max_rows": settings.table_row_group_max_rows,
     }
 
 
@@ -224,7 +229,12 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
         upsert_calls: list[int] = []
         delete_calls: list[int] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -242,6 +252,7 @@ def test_manifest_update_skips_unchanged_and_updates_changed(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -302,7 +313,12 @@ def test_manifest_update_keeps_documents_relative_keys_across_mount_paths(
     config = _build_config(tmp_path)
 
     class FakeStore:
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -322,6 +338,7 @@ def test_manifest_update_keeps_documents_relative_keys_across_mount_paths(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -436,6 +453,19 @@ def test_vector_store_snapshot_includes_auto_update_diagnostics(tmp_path: Path) 
             "lock_details": {},
         },
     }
+
+
+def test_index_settings_payload_records_effective_embedding_base_url(tmp_path: Path) -> None:
+    """Index settings include fallback embedding endpoint used for persisted vectors."""
+    config = _build_config(tmp_path)
+    config.openrouter_base_url = "https://custom-openrouter.example/api/v1"
+    config.vector_store.embedding_base_url = None
+
+    settings = get_vector_store_settings(config)
+    payload = _matching_index_settings_payload(config)
+
+    assert settings.embedding_base_url == "https://custom-openrouter.example/api/v1"
+    assert payload["embedding_base_url"] == "https://custom-openrouter.example/api/v1"
 
 
 def test_update_markdown_index_rebuilds_when_index_settings_change(
@@ -562,6 +592,115 @@ def test_pack_blocks_splits_single_oversized_code_block() -> None:
     assert all(count_tokens(chunk.embedding_text) <= max_tokens for chunk in code_chunks)
 
 
+def test_openai_embedding_provider_prefers_openrouter_key_for_openrouter_base_url(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """OpenRouter embeddings use OPENROUTER_API_KEY before OPENAI_API_KEY."""
+    captured: dict[str, str | None] = {}
+    monkeypatch.setenv("OPENAI_API_KEY", "openai-key")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "openrouter-key")
+
+    class FakeEmbeddingsApi:
+        def create(self, model: str, input: list[str]):  # noqa: ANN001
+            del model, input
+            raise RuntimeError("stop before request")
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            captured["api_key"] = api_key
+            captured["base_url"] = base_url
+            self.embeddings = FakeEmbeddingsApi()
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        base_url="https://openrouter.ai/api/v1",
+    )
+
+    assert provider is not None
+    assert captured == {
+        "api_key": "openrouter-key",
+        "base_url": "https://openrouter.ai/api/v1",
+    }
+
+
+def test_openai_embedding_provider_uses_only_explicit_api_key_env(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Explicit embedding key env prevents provider-specific fallback keys."""
+    captured: dict[str, str | None] = {}
+    monkeypatch.setenv("OPENAI_API_KEY", "openai-key")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "openrouter-key")
+    monkeypatch.setenv("CUSTOM_EMBEDDING_API_KEY", "custom-key")
+
+    class FakeOpenAIClient:
+        def __init__(self, api_key: str, base_url: str | None = None) -> None:
+            captured["api_key"] = api_key
+            captured["base_url"] = base_url
+
+    monkeypatch.setattr("backend.modules.vector_store.indexer.OpenAI", FakeOpenAIClient)
+
+    provider = OpenAIEmbeddingProvider(
+        model="test-embedding",
+        base_url="https://openrouter.ai/api/v1",
+        api_key_env="CUSTOM_EMBEDDING_API_KEY",
+    )
+
+    assert provider is not None
+    assert captured == {
+        "api_key": "custom-key",
+        "base_url": "https://openrouter.ai/api/v1",
+    }
+
+
+def test_openai_embedding_provider_missing_explicit_api_key_env_does_not_fallback(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Missing explicit embedding key env fails instead of using generic keys."""
+    monkeypatch.setenv("OPENAI_API_KEY", "openai-key")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "openrouter-key")
+    monkeypatch.delenv("CUSTOM_EMBEDDING_API_KEY", raising=False)
+
+    with pytest.raises(EnvironmentError, match="CUSTOM_EMBEDDING_API_KEY must be set"):
+        OpenAIEmbeddingProvider(
+            model="test-embedding",
+            base_url="https://openrouter.ai/api/v1",
+            api_key_env="CUSTOM_EMBEDDING_API_KEY",
+        )
+
+
+def test_chroma_store_uses_configured_distance_metric_for_collection() -> None:
+    """Chroma collection creation receives the configured HNSW distance metric."""
+
+    class FakeClient:
+        def __init__(self) -> None:
+            self.calls: list[dict[str, object]] = []
+
+        def get_or_create_collection(
+            self,
+            name: str,
+            configuration: dict[str, object] | None = None,
+        ) -> dict[str, object]:
+            self.calls.append({"name": name, "configuration": configuration})
+            return {"name": name}
+
+    store = ChromaStore.__new__(ChromaStore)
+    store._client = FakeClient()
+    store._collection_name = "test"
+    store._distance_metric = "cosine"
+
+    collection = store.get_collection()
+
+    assert collection == {"name": "test"}
+    assert store._client.calls == [
+        {
+            "name": "test",
+            "configuration": {"hnsw": {"space": "cosine"}},
+        }
+    ]
+
+
 def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> None:
     """Reset ignores missing-collection deletion errors and still recreates it."""
 
@@ -593,6 +732,7 @@ def test_reset_collection_ignores_collection_not_found_error(monkeypatch) -> Non
     store = ChromaStore.__new__(ChromaStore)
     store._client = FakeClient()
     store._collection_name = "test"
+    store._distance_metric = "cosine"
 
     store.reset_collection()
 
@@ -635,7 +775,12 @@ def test_update_markdown_index_ignores_selected_city_scope_for_persisted_writes(
         upsert_calls: list[int] = []
         reset_calls = 0
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -653,6 +798,7 @@ def test_update_markdown_index_ignores_selected_city_scope_for_persisted_writes(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -720,7 +866,12 @@ def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manife
         delete_calls: list[list[str]] = []
         upsert_calls: list[int] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -735,6 +886,7 @@ def test_update_markdown_index_embedding_failure_aborts_before_delete_and_manife
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -790,7 +942,12 @@ def test_build_markdown_index_embedding_failure_aborts_before_reset_and_manifest
         reset_calls = 0
         upsert_calls: list[int] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -805,6 +962,7 @@ def test_build_markdown_index_embedding_failure_aborts_before_reset_and_manifest
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -867,7 +1025,12 @@ def test_build_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_f
     class FakeStore:
         reset_calls = 0
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -925,7 +1088,12 @@ def test_update_markdown_index_refuses_to_wipe_non_empty_manifest_when_no_files_
         delete_calls: list[list[str]] = []
         upsert_calls: list[int] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -1016,7 +1184,12 @@ def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(
         reset_calls = 0
         upsert_calls: list[int] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -1031,6 +1204,7 @@ def test_build_markdown_index_ignores_selected_city_scope_for_persisted_writes(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -1101,7 +1275,12 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
     class FakeStore:
         operations: list[str] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -1118,6 +1297,7 @@ def test_update_markdown_index_upserts_before_deleting_old_chunks(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,
@@ -1180,7 +1360,12 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
         delete_calls: list[list[str]] = []
         upsert_chunk_ids: list[list[str]] = []
 
-        def __init__(self, persist_path: Path, collection_name: str) -> None:
+        def __init__(
+            self,
+            persist_path: Path,
+            collection_name: str,
+            distance_metric: str = "l2",
+        ) -> None:
             self.persist_path = persist_path
             self.collection_name = collection_name
 
@@ -1195,6 +1380,7 @@ def test_update_markdown_index_deletes_only_stale_old_ids_when_chunks_overlap(
             self,
             model: str,
             base_url: str | None = None,
+            api_key_env: str | None = None,
             batch_size: int = 100,
             max_retries: int = 3,
             retry_base_seconds: float = 0.8,

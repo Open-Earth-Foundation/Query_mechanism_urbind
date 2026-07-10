@@ -9,6 +9,8 @@ Inputs:
   - --config: Path to llm_config.yaml (default: llm_config.yaml).
 - Env vars:
   - OPENAI_API_KEY or OPENROUTER_API_KEY: key for embeddings.
+  - VECTOR_STORE_EMBEDDING_BASE_URL (optional): OpenAI-compatible embedding endpoint override.
+  - VECTOR_STORE_EMBEDDING_API_KEY_ENV (optional): env var name to use exclusively for embedding API auth.
   - CHROMA_PERSIST_PATH (optional): override Chroma persistence root.
   - VECTOR_STORE_UPDATE_MODE (optional): recorded in update_status.json.
 

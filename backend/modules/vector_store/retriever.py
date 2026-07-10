@@ -81,7 +81,8 @@ def _embed_queries(queries: list[str], config: AppConfig) -> dict[str, list[floa
     """Embed retrieval queries in one batch using a reusable provider."""
     provider = OpenAIEmbeddingProvider(
         model=config.vector_store.embedding_model,
-        base_url=config.openrouter_base_url,
+        base_url=config.vector_store.embedding_base_url or config.openrouter_base_url,
+        api_key_env=config.vector_store.embedding_api_key_env,
         max_input_tokens=config.vector_store.embedding_max_input_tokens,
     )
     embeddings = provider.embed_texts(queries)
@@ -584,6 +585,7 @@ def retrieve_chunks_for_queries(
     store = ChromaStore(
         persist_path=config.vector_store.chroma_persist_path,
         collection_name=config.vector_store.chroma_collection_name,
+        distance_metric=config.vector_store.distance_metric,
     )
     retry_settings = RetrySettings.bounded(
         max_attempts=config.retry.max_attempts,
@@ -674,6 +676,7 @@ def retrieve_chunks_for_queries(
             "queries": normalized_queries,
             "cities": city_keys,
             "per_city": per_city_stats,
+            "distance_metric": config.vector_store.distance_metric,
             "max_distance": config.vector_store.retrieval_max_distance,
             "fallback_min_chunks_per_city_query": fallback_min_chunks_per_city_query,
             "max_chunks_per_city_query": max_chunks_per_city_query,

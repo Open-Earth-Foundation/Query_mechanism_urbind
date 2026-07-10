@@ -58,13 +58,27 @@ def get_client(persist_path: Path):
 class ChromaStore:
     """Thin wrapper around Chroma collection operations."""
 
-    def __init__(self, persist_path: Path, collection_name: str) -> None:
+    def __init__(
+        self,
+        persist_path: Path,
+        collection_name: str,
+        distance_metric: str = "l2",
+    ) -> None:
+        """Create a store wrapper for one Chroma collection and distance metric."""
         self._client = get_client(persist_path)
         self._collection_name = collection_name
+        self._distance_metric = distance_metric
+
+    def _collection_configuration(self) -> dict[str, object]:
+        """Return Chroma collection configuration for the selected distance metric."""
+        return {"hnsw": {"space": self._distance_metric}}
 
     def get_collection(self) -> Collection:
         """Get or create underlying Chroma collection."""
-        return self._client.get_or_create_collection(name=self._collection_name)
+        return self._client.get_or_create_collection(
+            name=self._collection_name,
+            configuration=self._collection_configuration(),
+        )
 
     def reset_collection(self) -> None:
         """Delete and recreate collection for full rebuild."""
@@ -73,7 +87,10 @@ class ChromaStore:
         except Exception as exc:  # noqa: BLE001
             if not _is_collection_not_found_error(exc):
                 raise
-        self._client.get_or_create_collection(name=self._collection_name)
+        self._client.get_or_create_collection(
+            name=self._collection_name,
+            configuration=self._collection_configuration(),
+        )
 
     def upsert(self, chunks: list[IndexedChunk]) -> None:
         """Upsert indexed chunks into Chroma collection in safe batches."""
