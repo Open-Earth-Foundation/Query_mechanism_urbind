@@ -17,7 +17,7 @@ Read the pipeline docs in this order:
 | [06 Gap Analysis](06_gap-analysis.md) | Field decomposition and city gaps |
 | [07 External Sources](07_external-sources.md) | Governed Markdown search |
 | [08 Web Research](08_web-research.md) | Tier-1/open web search and freshness |
-| [09 Enrichment Context Handoff](09_enrichment-context-handoff.md) | Freeze post-enrichment context |
+| [09 Enrichment Context Handoff](09_enrichment-context-handoff.md) | Freeze merged post-enrichment context |
 | [10 Assumptions](10_assumptions.md) | Automatic gap estimation |
 | [11 Assumptions Context Handoff](11_assumptions-context-handoff.md) | Freeze post-assumptions context |
 | [12 Writer](12_writer.md) | Final report generation |
@@ -37,11 +37,20 @@ flowchart TD
     H -- yes --> I[Gap analysis]
     I --> J[External sources]
     J --> K[Web research + freshness]
-    K --> L[Assumptions]
-    L --> N[Enrichment + assumptions context handoffs]
-    N --> M
+    K --> L[Final enrichment merge<br/>compute_field_statuses]
+    L --> N[Enrichment context handoff]
+    N --> P[Assumptions]
+    P --> Q[Assumptions context handoff]
+    Q --> M
     M --> O[Finalize]
 ```
+
+The final enrichment merge happens inside stage `008_enrichment`, after external
+sources and web research have both finished. In code, this is
+`compute_field_statuses(...)` in
+`backend/modules/web_researcher/context_merger.py`. It creates the final
+`enriched_fields` list from gap analysis, web findings, freshness results, and
+external-source resolver decisions before assumptions run.
 
 ## Context Bundle Evolution
 
@@ -60,7 +69,7 @@ sequenceDiagram
     O->>M: Send batches of chunks
     M-->>O: accepted_excerpts.json
     O->>O: context_bundle.markdown = excerpts
-    O->>E: Analyze gaps and search additional evidence
+    O->>E: Analyze gaps, search external/web evidence, then merge statuses
     E-->>O: context_bundle.enrichment = field_manifest, gap_manifest, enriched_fields, web/external/freshness evidence
     O->>A: Estimate unresolved enriched fields
     A-->>O: context_bundle.assumptions = assumptions + non_estimable

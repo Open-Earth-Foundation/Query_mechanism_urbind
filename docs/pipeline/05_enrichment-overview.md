@@ -9,6 +9,7 @@ The enrichment phase currently contains:
 1. [Gap Analysis](06_gap-analysis.md)
 2. [External Sources](07_external-sources.md)
 3. [Web Research](08_web-research.md)
+4. Final enrichment merge into `enriched_fields`
 
 After evidence is merged, see [Enrichment Context Handoff](09_enrichment-context-handoff.md), then [Assumptions](10_assumptions.md) and [Assumptions Context Handoff](11_assumptions-context-handoff.md).
 
@@ -30,12 +31,18 @@ flowchart TD
     I -- yes --> J[Tier-1/open web search + scrape + extract]
     I -- no --> K[Skip web research]
     J --> L[Freshness comparison]
-    K --> M[Compute enriched fields]
+    K --> M[Final enrichment merge<br/>compute_field_statuses]
     L --> M
+    F --> M
     M --> N[enrichment_bundle.json]
     N --> O[Enrichment context handoff]
     O --> P[Assumptions estimator]
 ```
+
+`compute_field_statuses(...)` is the final merge inside stage
+`008_enrichment`. It takes the gap manifest, web findings, freshness results,
+and external-source resolver decisions, then produces the final
+`enriched_fields` statuses used by the handoff and assumptions estimator.
 
 ## Context Bundle Effect
 
@@ -72,6 +79,7 @@ Assumptions are written separately to top-level `context_bundle.assumptions`, no
 - CCC excerpts remain the primary evidence path.
 - External governed Markdown can confirm, fill, conflict with, or leave unresolved CCC evidence.
 - Web findings are not automatically trusted. Freshness checks can classify them as consistent, superseded, uncertain, or cancelled.
+- External-source search runs before web research, but its resolver decisions are applied during the final enrichment merge after web/freshness results are available.
 - Only resolved enriched fields become assumption anchors.
 
 ## Boundaries And Limitations

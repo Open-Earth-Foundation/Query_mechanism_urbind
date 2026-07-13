@@ -5,7 +5,7 @@ Tracking open issues observed in prior real runs of the enrichment pipeline
 current branch but should be addressed before relying on enrichment outputs in
 production.
 
-## 1. Relevance filter misses off-topic web sources
+## 1. Off-topic web-source false positives are only partly mitigated
 
 **Symptom.** In a prior run over 8 German cities, Heidelberg's
 `total_targeted_vehicles` was estimated at **19,000**, a figure pulled from an
@@ -17,19 +17,23 @@ climate action plan.
 filter) and/or `backend/modules/web_researcher/extractor.py` (post-scrape
 filter).
 
-**What's happening.** The city-name disambiguation heuristic accepts any search
-result that mentions the target city, even when the result is about an unrelated
-private entity co-located with the city. The extractor then pulls a "fleet"
-number from that page.
+**Status.** Partly mitigated, not closed. The relevance checker now asks the
+LLM to distinguish a municipality from a company, brand, product, or person with
+the same name, and it forces `likely_false_match` results to be rejected. The
+web extractor also includes semantic-alignment rules that tell it not to treat
+private or regional/national figures as city-field values. However, the
+relevance stage still intentionally fails open when uncertain or when the LLM
+call fails, and there is not yet a deterministic regression fixture for the
+SAP/Heidelberg-style case.
 
-**Fix direction.** Tighten relevance scoring to require that the document's
-main subject is the municipality, not a private entity. Candidate heuristics:
-reject domains that read as corporate press releases when the target field is a
-municipal fleet count; require the city name to appear in a governmental/plan
-context near the extracted value; add domain blocklists for obvious corporate PR
-sources when the query is about municipal inventory.
+**Fix direction.** Add regression tests and deterministic guardrails around
+known false-match patterns. Candidate heuristics: reject obvious corporate PR
+sources when the target field is municipal inventory; require the city name to
+appear in a governmental, plan, procurement, or operator context near the
+extracted value; keep the LLM disambiguation as a useful layer but not the only
+line of defense.
 
-## 2. Assumptions estimator anchors on the wrong CCC fragment
+## 2. Assumptions estimator source-figure selection is still weak for roll-ups
 
 **Symptom.** In a prior run, Aachen's `total_targeted_vehicles` estimate came
 back as **2** (range 1-3) even though the same CCC excerpts explicitly contain
@@ -40,14 +44,20 @@ peer-sanity range around it, so the estimated "total" was an order of magnitude
 below the numbers plainly visible in the same bundle.
 
 **Location.** `backend/modules/web_researcher/assumptions_estimator.py`,
-specifically the step that selects the source figure for
-`expert_heuristic_scaling`.
+especially the estimator prompt and peer-reference construction.
 
-**Fix direction.** When multiple numeric mentions are present in the CCC
-evidence for a city-field pair, the estimator should either sum
-category-appropriate counts if the field is a roll-up, or anchor on the largest
-comparable figure and explicitly note the sub-category counts in the rationale.
-The current min-first behavior can produce low-biased estimates.
+**Status.** Still relevant, but the original "min-first behavior" wording is
+now too specific. Current code sends the fixed gaps, enriched fields, benchmark
+findings, and peer reference table to the estimator LLM; it does not expose a
+structured `known_values[]` roll-up for all numeric mentions found in CCC prose.
+That means roll-up fields such as `total_targeted_vehicles` still depend on the
+LLM selecting and combining the right anchor values from unstructured context.
+
+**Fix direction.** Surface structured CCC numeric facts before estimation. When
+multiple numeric mentions are present for a city-field pair, the estimator
+should either sum category-appropriate counts if the field is a roll-up, or
+anchor on the largest comparable figure and explicitly note excluded
+sub-category counts in the rationale.
 
 ## 3. Freshness "uncertain" dominates on prose-only CCC evidence
 
@@ -101,10 +111,12 @@ that the numbers are order-of-magnitude rather than precise. But the underlying
 cause is that Methods A (national/regional average) and B (peer-city proxy)
 rarely fire because there are not enough peer-resolved fields to seed them.
 
-**Fix direction.** Pre-populate a small registry of national/regional averages
-for common fields (bus fleet size per 100k residents, taxi licenses per 100k,
-municipal fleet size per 100k) so Method A becomes available even before any
-peer city is resolved.
+**Fix direction.** Method A can use national/regional benchmark findings when
+the web-research benchmark batches run, but those batches are still
+budget-dependent (see issue 7). Pre-populate a small registry of stable
+national/regional averages for common fields (bus fleet size per 100k residents,
+taxi licenses per 100k, municipal fleet size per 100k) so Method A is available
+even before any peer city is resolved or benchmark search has spare capacity.
 
 ## 6. Writer prompts still reference enrichment sections that assume structure
 
@@ -113,11 +125,46 @@ peer city is resolved.
 
 **Status.** Fine today, but worth watching. The writer assumes
 `enrichment.enriched_fields[]`, `enrichment.web_findings[]`,
-`enrichment.freshness_results[]`, and top-level `assumptions.assumptions[]` /
-`assumptions.non_estimable[]` are present when those stages run. Several tables
-in the prompt (per-city audit, augmented-data-insights) are only useful when
-web findings and assumption estimates agree or clearly disagree. When most
-freshness flags are `uncertain` (see issue 3), those tables can become thin and
-repetitive. Consider reworking the writer prompt to collapse the audit table
-into a compact "n still_missing, m partially_resolved" summary when there are
-no `resolved` web findings.
+`enrichment.freshness_results[]`, and
+`context_bundle.assumptions.assumptions[]` /
+`context_bundle.assumptions.non_estimable[]` are present when those stages run.
+Several tables in the prompt (per-city audit, augmented-data-insights) are only
+useful when web findings and assumption estimates agree or clearly disagree.
+When most freshness flags are `uncertain` (see issue 3), those tables can
+become thin and repetitive. Consider reworking the writer prompt to collapse
+the audit table into a compact "n still_missing, m partially_resolved" summary
+when there are no `resolved` web findings.
+
+## 7. Benchmark web searches are silently budget-gated
+
+**Location.** `backend/modules/web_researcher/search_planner.py`.
+
+**Problem.** National and comparative benchmark query batches are only planned
+after city-specific web search batches consume their share of
+`max_total_queries_per_run`. If city-search planning uses the full budget, the
+benchmark batches do not run. This makes broader benchmark coverage vary by run
+shape instead of by an explicit product/config decision.
+
+**Fix direction.** Make benchmark search behavior explicit. Either add a config
+or env flag that clearly enables/disables national and comparative benchmark
+search, or give benchmark batches their own budget so they can run alongside
+city-specific search without depending on leftover query capacity.
+
+## 8. Assumption peer anchors use exact LLM-generated field names
+
+**Location.** `backend/modules/web_researcher/gap_analysis.py` and
+`backend/modules/web_researcher/assumptions_estimator.py`.
+
+**Problem.** Gap analysis asks the LLM to create short `snake_case` field names.
+Those names are then reused through city-gap detection, web/external search, and
+assumptions. The assumptions estimator builds peer anchors only from resolved
+`enriched_fields` with the exact same field name. There is no canonical field
+taxonomy or alias map today, so conceptually similar fields such as
+`dc_chargers`, `public_dc_charger_count`, and `fast_charging_points` are not
+automatically treated as comparable anchors.
+
+**Fix direction.** Add a canonical field layer before downstream enrichment:
+each decomposed field should carry a stable `canonical_field_id`, display label,
+aliases/synonyms, unit family, and scope. Assumptions should match peer anchors
+on the canonical id plus compatible scope/unit family, while still preserving
+the LLM-generated field label for readability.

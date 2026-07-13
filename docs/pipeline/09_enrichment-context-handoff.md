@@ -1,6 +1,11 @@
 # Enrichment Context Handoff
 
-The enrichment context handoff stage (`009_enrichment_context_handoff`) freezes the full runtime context immediately after enrichment evidence is merged and serialized. It creates an immutable checkpoint before the assumptions estimator runs.
+The enrichment context handoff stage (`009_enrichment_context_handoff`) freezes the full runtime context immediately after stage `008_enrichment` has merged evidence and serialized `enrichment_bundle.json`. It creates an immutable checkpoint before the assumptions estimator runs.
+
+The actual evidence/status merge happens one stage earlier, inside
+`compute_field_statuses(...)` in
+`backend/modules/web_researcher/context_merger.py`. This handoff only persists
+the already-merged result.
 
 ## What It Does
 
@@ -12,9 +17,10 @@ The enrichment context handoff stage (`009_enrichment_context_handoff`) freezes 
 
 ```mermaid
 flowchart TD
-    A[Gap analysis + external + web research] --> B[merge_enrichment_evidence_into_context]
-    B --> C[serialize_enrichment_artifacts]
-    C --> D[Write live context_bundle.json]
+    A[Gap analysis + external + web research] --> B[compute_field_statuses]
+    B --> C[merge_enrichment_evidence_into_context]
+    C --> H[serialize_enrichment_artifacts]
+    H --> D[Write live context_bundle.json]
     D --> E[Deep-copy full context bundle]
     E --> F[context_bundle_after_enrichment.json]
     F --> G[Assumptions estimator]
@@ -24,6 +30,7 @@ flowchart TD
 
 - **Full snapshot, not a subset:** unlike the writer, the handoff stores the entire context bundle at this point, including diagnostics the writer later filters out.
 - **Timing:** the handoff happens after `enrichment_bundle.json` is written but before assumptions mutate `context_bundle.assumptions`.
+- **No merge logic here:** external and web evidence have already been reconciled into `enriched_fields`; this stage only snapshots the result.
 - **Skipped when enrichment disabled:** if `ENRICHMENT_ENABLED` is false, enrichment and this handoff are not planned or executed.
 
 ## Context Bundle Effect
