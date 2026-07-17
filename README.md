@@ -602,7 +602,7 @@ Benchmark behavior notes:
 - The script always loads benchmark env files from `backend/benchmarks/config/`.
 - The benchmark is runtime-only; it does not build/update the vector index.
 - Vector mode uses the existing default Chroma store/collection unless overridden in your main environment.
-- The benchmark also runs LLM-as-judge scoring (`openai/gpt-5.6-terra` by default via `benchmark_fact_judge` / `BENCHMARK_JUDGE_MODEL`) per matched standard-vs-vector run pair within the same markdown option.
+- The benchmark also runs pairwise LLM-as-judge scoring (`openai/gpt-5.6-terra` by default via the `BENCHMARK_JUDGE_MODEL` constant in `backend/benchmarks/judge.py`) per matched standard-vs-vector run pair within the same markdown option. This pairwise judge does not read `benchmark_fact_judge` from `llm_config.yaml` (that block is used by the gold-recall fact judge instead).
 - The benchmark report includes speed metrics (`runtime`, `tokens/sec`) and LLM issue counters (rate limits, retries exhausted, max-turns, and non-working calls).
 - Individual run failures are recorded and counted (instead of aborting the full matrix); summaries include success rate and failed run count.
 
