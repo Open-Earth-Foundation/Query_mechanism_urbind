@@ -14,7 +14,7 @@ from backend.services.agents import (
 from backend.utils.config import AppConfig
 from backend.utils.prompts import load_prompt
 
-BENCHMARK_JUDGE_MODEL = "openai/gpt-5.4-mini"
+BENCHMARK_JUDGE_MODEL = "openai/gpt-5.6-terra"
 
 
 def build_benchmark_judge_agent(config: AppConfig, api_key: str) -> Agent:

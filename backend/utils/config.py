@@ -213,26 +213,26 @@ class AppConfig(BaseModel):
     orchestrator: OrchestratorConfig
     markdown_researcher: MarkdownResearcherConfig
     initiative_extractor: InitiativeExtractorConfig = Field(
-        default_factory=lambda: InitiativeExtractorConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: InitiativeExtractorConfig(model="openai/gpt-5.6-luna")
     )
     tef_mapper: TefMapperConfig = Field(
-        default_factory=lambda: TefMapperConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: TefMapperConfig(model="openai/gpt-5.6-luna")
     )
     writer: WriterConfig
     chat: ChatConfig = Field(
-        default_factory=lambda: ChatConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: ChatConfig(model="openai/gpt-5.6-terra")
     )
     assumptions_reviewer: AssumptionsReviewerConfig = Field(
-        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: AssumptionsReviewerConfig(model="openai/gpt-5.6-terra")
     )
     enrichment: EnrichmentConfig = Field(
-        default_factory=lambda: EnrichmentConfig(model="openai/gpt-5.4-mini", enabled=False)
+        default_factory=lambda: EnrichmentConfig(model="openai/gpt-5.6-luna", enabled=False)
     )
     benchmark_fact_judge: BenchmarkFactJudgeConfig = Field(
-        default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: BenchmarkFactJudgeConfig(model="openai/gpt-5.6-terra")
     )
     benchmark_number_extractor: BenchmarkNumberExtractorConfig = Field(
-        default_factory=lambda: BenchmarkNumberExtractorConfig(model="openai/gpt-5.4-mini")
+        default_factory=lambda: BenchmarkNumberExtractorConfig(model="openai/gpt-5.6-terra")
     )
     retry: RetryConfig = Field(default_factory=RetryConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)

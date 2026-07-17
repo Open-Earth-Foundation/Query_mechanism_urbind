@@ -64,7 +64,7 @@ def test_chat_session_lifecycle(tmp_path: Path, monkeypatch: pytest.MonkeyPatch)
         assert isinstance(contexts[0].get("final_document"), str)
         assert isinstance(contexts[0].get("context_bundle"), dict)
         assert isinstance(history, list)
-        assert config.chat.model == "openai/gpt-5.4-mini"
+        assert config.chat.model == "openai/gpt-5.6-terra"
         assert token_cap == config.chat.max_context_total_tokens
         assert isinstance(citation_catalog, list)
         assert citation_prefix_tokens is None or isinstance(citation_prefix_tokens, list)
