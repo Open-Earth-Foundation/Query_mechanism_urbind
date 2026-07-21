@@ -401,7 +401,7 @@ def test_load_config_reads_required_chat_defaults_from_yaml(tmp_path: Path) -> N
 def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing(
     tmp_path: Path,
 ) -> None:
-    """Missing chat and assumptions sections fall back to safe model defaults."""
+    """Missing optional agent sections fall back to safe model defaults."""
     config_path = tmp_path / "llm_config.yaml"
     config_path.write_text(
         "\n".join(
@@ -415,8 +415,6 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
                 "  max_workers: 8",
                 "  request_backoff_base_seconds: 0.5",
                 "  request_backoff_max_seconds: 2.0",
-                "writer:",
-                "  model: test-model",
                 "retry:",
                 "  backoff_base_seconds: 1.0",
                 "  backoff_max_seconds: 30.0",
@@ -427,14 +425,16 @@ def test_load_config_applies_chat_and_assumptions_defaults_when_sections_missing
 
     config = load_config(config_path)
 
-    assert config.chat.model == "openai/gpt-5.4-mini"
+    assert config.writer.model == "openai/gpt-5.6-sol"
+    assert config.writer.reasoning_effort == "high"
+    assert config.chat.model == "openai/gpt-5.6-terra"
     assert config.chat.provider_timeout_seconds == 60.0
     assert config.chat.followup_router_max_history_messages == 6
     assert config.chat.followup_router_max_excerpts_per_source == 50
-    assert config.assumptions_reviewer.model == "openai/gpt-5.4-mini"
-    assert config.benchmark_fact_judge.model == "openai/gpt-5.4-mini"
+    assert config.assumptions_reviewer.model == "openai/gpt-5.6-terra"
+    assert config.benchmark_fact_judge.model == "openai/gpt-5.6-terra"
     assert config.benchmark_fact_judge.max_output_tokens == 600
-    assert config.benchmark_number_extractor.model == "openai/gpt-5.4-mini"
+    assert config.benchmark_number_extractor.model == "openai/gpt-5.6-terra"
     assert config.benchmark_number_extractor.max_output_tokens == 900
 
 

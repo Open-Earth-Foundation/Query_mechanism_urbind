@@ -28,7 +28,7 @@ class TestEnrichmentConfig:
         config = build_test_app_config()
         assert config.enrichment.enabled is False
         assert config.enrichment.web_research_enabled is False
-        assert config.enrichment.model == "openai/gpt-5.4-mini"
+        assert config.enrichment.model == "openai/gpt-5.6-luna"
 
     def test_config_overrides_via_build_test(self) -> None:
         config = build_test_app_config(

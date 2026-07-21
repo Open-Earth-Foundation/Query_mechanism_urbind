@@ -43,6 +43,12 @@ frontend-dev*.log
 .cursor/*
 !.cursor/skills/
 !.cursor/skills/**
+# Spec Kit skills are local-only (keep project skills under .cursor/skills/ tracked).
+.cursor/skills/speckit-*/
+
+# Spec Kit project scaffolding and feature specs (local-only; do not commit)
+.specify/
+specs/
 
 frontend/.next
 frontend/node_modules
