@@ -25,13 +25,13 @@ Fixed inputs (same for all runs):
 
 Runs:
 
-| Strategy | Run ID | Config |
+| Strategy | Run ID | Config used during evaluation |
 | --- | --- | --- |
-| Baseline (5.4) | `on6053_baseline_munich_leipzig` | `llm_config.yaml` (pre-change) |
-| Candidate A | `on6053_candidate_a_terra` | `llm_config.on6053_candidate_a_terra.yaml` |
-| Candidate B | `on6053_candidate_b_tiered` | `llm_config.on6053_candidate_b_tiered.yaml` |
+| Baseline (5.4) | `on6053_baseline_munich_leipzig` | pre-change `llm_config.yaml` |
+| Candidate A | `on6053_candidate_a_terra` | temporary all-terra GPT-5.6 copy (removed before merge) |
+| Candidate B | `on6053_candidate_b_tiered` | temporary tiered GPT-5.6 copy (removed before merge; became the checked-in default) |
 
-Metric snapshots: `output/on6053_validation/*_metrics.json`
+Ticket-specific candidate YAML snapshots were deleted before merge to avoid repo clutter; results and recommendation remain in this doc. Metric snapshots lived under `output/on6053_validation/` locally.
 
 ## Results
 
@@ -66,10 +66,7 @@ Use Candidate A (all `openai/gpt-5.6-terra`). It is still clearly better than th
 ## Changes Applied
 
 - Updated `llm_config.yaml` to the tiered GPT-5.6 map.
-- Synced AppConfig fallback defaults in `backend/utils/config.py`.
+- Synced AppConfig fallback defaults in `backend/utils/config.py`, including writer → `openai/gpt-5.6-sol`.
 - Updated `BENCHMARK_JUDGE_MODEL` fallback in `backend/benchmarks/judge.py`.
 - Updated docs/tests that asserted the old 5.4 defaults.
-
-## Spec Kit
-
-Feature artifacts live under `specs/001-review-update-models/`.
+- Removed ticket-specific candidate YAML snapshots before merge; recommendation and metrics stay in this doc.

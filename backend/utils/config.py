@@ -218,7 +218,12 @@ class AppConfig(BaseModel):
     tef_mapper: TefMapperConfig = Field(
         default_factory=lambda: TefMapperConfig(model="openai/gpt-5.6-luna")
     )
-    writer: WriterConfig
+    writer: WriterConfig = Field(
+        default_factory=lambda: WriterConfig(
+            model="openai/gpt-5.6-sol",
+            reasoning_effort="high",
+        )
+    )
     chat: ChatConfig = Field(
         default_factory=lambda: ChatConfig(model="openai/gpt-5.6-terra")
     )
