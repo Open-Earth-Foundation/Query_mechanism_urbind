@@ -73,6 +73,8 @@ Environment variables (`.env`):
 - `RUNS_DIR` (optional, default `output`): base directory for run artifacts.
 - `MLFLOW_ENABLED` (optional, default `false`): enables best-effort MLflow observability for finalized pipeline runs.
 - `MLFLOW_TRACKING_URI` (optional): MLflow tracking URI. Leave empty to use MLflow's local/default tracking configuration.
+- `MLFLOW_TRACKING_USERNAME` (required for the hosted MLflow): shared non-admin service-account username.
+- `MLFLOW_TRACKING_PASSWORD` (required for the hosted MLflow): matching password; keep real values only in local `.env`, GitHub Secrets, or a Kubernetes Secret.
 - `MLFLOW_EXPERIMENT_NAME` (optional, default `URBIND`): MLflow experiment used for mirrored runs.
 - `MLFLOW_ENVIRONMENT` (optional): environment tag added to mirrored MLflow runs, for example `local` or `production`.
 - `MLFLOW_ARTIFACT_PATH` (optional, default `run_artifacts`): artifact path under each MLflow run where the full `output/<run_id>/` directory is uploaded.
@@ -157,6 +159,13 @@ The backend uploads the complete `output/<run_id>/` directory with
 `mlflow.log_artifacts(...)`, not only files listed in `manifest.json`.
 When `MLFLOW_ENVIRONMENT` is set, its value is stored as the MLflow
 `environment` tag and in the local MLflow sync metadata.
+
+The hosted MLflow server requires `MLFLOW_TRACKING_USERNAME` and
+`MLFLOW_TRACKING_PASSWORD`. Use the shared non-admin service account, not the
+MLflow admin account or Flask signing secret. The deployment workflow copies
+the two GitHub Secrets into the existing
+`urbind-query-mechanism-backend-secrets` Kubernetes Secret before applying the
+backend Deployment.
 
 MLflow-enabled runs also record raw LLM call artifacts locally:
 
@@ -1155,6 +1164,8 @@ docker push ghcr.io/open-earth-foundation/query_mechanism_urbind-frontend:dev
 kubectl create secret generic urbind-query-mechanism-backend-secrets \
   --from-literal=OPENROUTER_API_KEY=<openrouter-key> \
   --from-literal=MLFLOW_TRACKING_URI=<mlflow-tracking-uri> \
+  --from-literal=MLFLOW_TRACKING_USERNAME=<mlflow-service-user> \
+  --from-literal=MLFLOW_TRACKING_PASSWORD=<mlflow-service-password> \
   --dry-run=client -o yaml | kubectl apply -f -
 
 kubectl apply -f k8s/backend-pvc.yml
@@ -1167,7 +1178,7 @@ kubectl apply -f k8s/frontend-service.yml
 
 Add `SERPER_API_KEY` and `FIRECRAWL_API_KEY` to the secret only when web research is enabled.
 
-The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. It also enables MLflow with `MLFLOW_ENABLED=true`, `MLFLOW_EXPERIMENT_NAME=URBIND`, `MLFLOW_ENVIRONMENT=production`, `MLFLOW_ARTIFACT_PATH=run_artifacts`, `MLFLOW_TRACE_MODE=consolidated`, and `MLFLOW_FAIL_ON_ERROR=false`; the actual tracking URI comes from the `MLFLOW_TRACKING_URI` Kubernetes secret populated by GitHub Actions. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
+The backend ConfigMap sets `VECTOR_STORE_ENABLED=true`, `VECTOR_STORE_AUTO_UPDATE_ON_RUN=false`, and `VECTOR_STORE_UPDATE_MODE=local_process` for the deployed environment. It also enables MLflow with `MLFLOW_ENABLED=true`, `MLFLOW_EXPERIMENT_NAME=URBIND`, `MLFLOW_ENVIRONMENT=production`, `MLFLOW_ARTIFACT_PATH=run_artifacts`, `MLFLOW_TRACE_MODE=consolidated`, and `MLFLOW_FAIL_ON_ERROR=false`; the tracking URI and non-admin service credentials come from the `urbind-query-mechanism-backend-secrets` Kubernetes Secret populated by GitHub Actions. The backend still checks whether the vector store is stale, but it does not try to update it automatically in Kubernetes. When the store is stale, runs are blocked and the UI instructs the operator to run the maintenance workflow documented below.
 
 ## GitHub Actions deployment
 
@@ -1191,6 +1202,8 @@ Required repository secrets:
 - `EKS_DEV_NAME`
 - `OPENROUTER_API_KEY`
 - `MLFLOW_TRACKING_URI`
+- `MLFLOW_TRACKING_USERNAME`
+- `MLFLOW_TRACKING_PASSWORD`
 - `APP_SHARED_PASSWORD_HASH`
 - `APP_SESSION_SECRET`
 

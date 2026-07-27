@@ -25,25 +25,35 @@ def test_backend_kubernetes_manifests_enable_mlflow_for_production() -> None:
     assert configmap["data"]["MLFLOW_FAIL_ON_ERROR"] == "false"
 
     backend_env = _container_env_by_name("k8s/backend-deployment.yml", "backend")
-    mlflow_secret = backend_env["MLFLOW_TRACKING_URI"]["valueFrom"]["secretKeyRef"]
-    assert mlflow_secret["name"] == "urbind-query-mechanism-backend-secrets"
-    assert mlflow_secret["key"] == "MLFLOW_TRACKING_URI"
+    for variable in (
+        "MLFLOW_TRACKING_URI",
+        "MLFLOW_TRACKING_USERNAME",
+        "MLFLOW_TRACKING_PASSWORD",
+    ):
+        mlflow_secret = backend_env[variable]["valueFrom"]["secretKeyRef"]
+        assert mlflow_secret["name"] == "urbind-query-mechanism-backend-secrets"
+        assert mlflow_secret["key"] == variable
 
 
-def test_vector_index_job_receives_mlflow_tracking_uri_secret() -> None:
+def test_vector_index_job_receives_mlflow_secrets() -> None:
     """The maintenance Job should use the same backend secret contract."""
     job_env = _container_env_by_name(
         "k8s/backend-build-vector-index-job.yml",
         "build-index",
     )
 
-    mlflow_secret = job_env["MLFLOW_TRACKING_URI"]["valueFrom"]["secretKeyRef"]
-    assert mlflow_secret["name"] == "urbind-query-mechanism-backend-secrets"
-    assert mlflow_secret["key"] == "MLFLOW_TRACKING_URI"
+    for variable in (
+        "MLFLOW_TRACKING_URI",
+        "MLFLOW_TRACKING_USERNAME",
+        "MLFLOW_TRACKING_PASSWORD",
+    ):
+        mlflow_secret = job_env[variable]["valueFrom"]["secretKeyRef"]
+        assert mlflow_secret["name"] == "urbind-query-mechanism-backend-secrets"
+        assert mlflow_secret["key"] == variable
 
 
-def test_deploy_workflow_creates_mlflow_tracking_uri_secret() -> None:
-    """The deploy workflow should copy GitHub's MLflow secret into Kubernetes."""
+def test_deploy_workflow_creates_mlflow_secrets() -> None:
+    """The deploy workflow should copy GitHub's MLflow secrets into Kubernetes."""
     workflow = yaml.safe_load(
         Path(".github/workflows/develop.yml").read_text(encoding="utf-8")
     )
@@ -52,8 +62,13 @@ def test_deploy_workflow_creates_mlflow_tracking_uri_secret() -> None:
         step for step in steps if step["name"] == "Create or update backend secret"
     )
 
-    assert backend_secret_step["env"]["MLFLOW_TRACKING_URI"] == (
-        "${{ secrets.MLFLOW_TRACKING_URI }}"
-    )
-    assert "Set GitHub secret MLFLOW_TRACKING_URI" in backend_secret_step["run"]
-    assert "--from-literal=MLFLOW_TRACKING_URI=" in backend_secret_step["run"]
+    for variable in (
+        "MLFLOW_TRACKING_URI",
+        "MLFLOW_TRACKING_USERNAME",
+        "MLFLOW_TRACKING_PASSWORD",
+    ):
+        assert backend_secret_step["env"][variable] == (
+            f"${{{{ secrets.{variable} }}}}"
+        )
+        assert f"Set GitHub secret {variable}" in backend_secret_step["run"]
+        assert f"--from-literal={variable}=" in backend_secret_step["run"]

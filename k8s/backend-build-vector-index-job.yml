@@ -129,6 +129,16 @@ spec:
                 secretKeyRef:
                   name: urbind-query-mechanism-backend-secrets
                   key: MLFLOW_TRACKING_URI
+            - name: MLFLOW_TRACKING_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: MLFLOW_TRACKING_USERNAME
+            - name: MLFLOW_TRACKING_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: urbind-query-mechanism-backend-secrets
+                  key: MLFLOW_TRACKING_PASSWORD
           workingDir: /app
           command:
             - sh
